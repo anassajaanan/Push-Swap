@@ -1,0 +1,67 @@
+void    bring_to_top(t_stack *a, int chunck_max)
+{
+    int count_top = 0;
+    int count_bottom = 1;
+    struct s_stack_node *p = a->top;
+    struct s_stack_node *q = a->last;
+    while (p && p->val > chunck_max)
+    {
+        count_top++;
+        p = p->next;
+    }
+    while (q && q->val > chunck_max)
+    {
+        count_bottom++;
+        q = q->prev;
+    }
+    if (count_top < count_bottom)
+    {
+        while (a->top->val > chunck_max)
+            ft_ra(a);
+    }
+    else
+    {
+        while (a->top->val > chunck_max)
+            ft_rra(a);
+    }
+}
+
+void bring_max_top(t_stack *b)
+{
+    int max = get_max(*b);
+    int i = 0;
+    struct s_stack_node *p = b->top;
+    while (p->val != max)
+    {
+        i++;
+        p = p->next;
+    }
+    if (i < b->length / 2)
+    {
+        while (b->top->val != max)
+            ft_rb(b);
+    }
+    else
+    {
+        while (b->top->val != max)
+            ft_rrb(b);
+    }
+}
+
+void    sort(t_stack *a, t_stack *b)
+{
+    for (int i = 1; i <= 4; i++)
+    {
+        int chunck_max = 25 * i;
+        for (int j = 0; j < 25; j++)
+        {
+            bring_to_top(a, chunck_max);
+            ft_pb(a, b);
+        }
+    }
+    while (b->top)
+    {
+        bring_max_top(b);
+        ft_pa(a, b);
+    }
+}
