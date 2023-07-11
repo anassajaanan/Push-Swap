@@ -12,44 +12,6 @@
 
 #include "../include/push_swap.h"
 
-
-
-void	swap(int *a, int *b)
-{
-    int temp;
-
-    temp = *a;
-    *a = *b;
-    *b = temp;
-}
-
-void	bubble_sort(int A[], int size)
-{
-    int	i;
-    int	j;
-    int	flag;
-
-    i = 0;
-    while (i < size - 1)
-    {
-        j = 0;
-        flag = 0;
-        while (j < size - 1 - i)
-        {
-            if (A[j] > A[j + 1])
-            {
-                swap(&A[j], &A[j + 1]);
-                flag = 1;
-            }
-            j++;
-        }
-        if (flag == 0)
-            return ;
-        i++;
-    }
-}
-
-
 void    sort_small(t_stack *a)
 {
 	if (a->length <= 1)
@@ -71,7 +33,7 @@ void    sort_small(t_stack *a)
 	}
 }
 
-int cost_to_bring_to_top(t_stack *s, int val)
+int get_top_cost(t_stack *s, int val)
 {
 	struct s_stack_node *temp;
 
@@ -88,7 +50,7 @@ int cost_to_bring_to_top(t_stack *s, int val)
 		return (-(s->length - i));
 }
 
-int find_best_target_in_stack_b(t_stack *b, int source_val)
+int find_best_target_in_stack_b(t_stack *b, int src_value_a)
 {
 	t_stack             s;
 	struct s_stack_node *temp;
@@ -97,7 +59,7 @@ int find_best_target_in_stack_b(t_stack *b, int source_val)
 	temp = b->top;
 	while (temp)
 	{
-		if (temp->val < source_val)
+		if (temp->val < src_value_a)
 			push(&s, temp->val);
 		temp = temp->next;
 	}
@@ -107,7 +69,7 @@ int find_best_target_in_stack_b(t_stack *b, int source_val)
 		return (get_max(s));
 }
 
-int find_best_target_in_stack_a(t_stack *a, int source_val)
+int find_best_target_in_stack_a(t_stack *a, int src_value_b)
 {
 	t_stack             s;
 	struct s_stack_node *temp;
@@ -116,7 +78,7 @@ int find_best_target_in_stack_a(t_stack *a, int source_val)
 	temp = a->top;
 	while (temp)
 	{
-		if (temp->val > source_val)
+		if (temp->val > src_value_b)
 			push(&s, temp->val);
 		temp = temp->next;
 	}
@@ -126,185 +88,160 @@ int find_best_target_in_stack_a(t_stack *a, int source_val)
 		return (get_min(s));
 }
 
-int get_target_of_a(t_stack *b, int val)
+void    rotate_stack_a(t_stack *a, int cost)
 {
-	t_stack s;
-	init_stack(&s);
-	struct s_stack_node *temp = b->top;
-	while (temp)
+	int i;
+
+	i = 0;
+	if (cost >= 0)
 	{
-		if (temp->val < val)
-			push(&s, temp->val);
-		temp = temp->next;
+		while (i < cost)
+		{
+			ft_ra(a);
+			i++;
+		}
 	}
-	if (s.length == 0)
-		return (get_max(*b));
 	else
-		return (get_max(s));
+	{
+		while (i < abs(cost))
+		{
+			ft_rra(a);
+			i++;
+		}
+	}
 }
 
-int get_target_of_b(t_stack *a, int val)
+void    rotate_stack_b(t_stack *b, int cost)
 {
-	t_stack s;
-	init_stack(&s);
-	struct s_stack_node *temp = a->top;
-	while (temp)
+	int i;
+
+	i = 0;
+	if (cost >= 0)
 	{
-		if (temp->val > val)
-			push(&s, temp->val);
-		temp = temp->next;
+		while (i < cost)
+		{
+			ft_rb(b);
+			i++;
+		}
 	}
-	if (s.length == 0)
-		return (get_min(*a));
 	else
-		return (get_min(s));
+	{
+		while (i < abs(cost))
+		{
+			ft_rrb(b);
+			i++;
+		}
+	}
 }
 
-//int count_cost(t_stack *b, int val)
-//{
-//	int cost = 0;
-//	int min = get_min(*b);
-//	int max = get_max(*b);
-//
-//
-//}
-
-
-void    sort(t_stack *a, t_stack *b)
+struct s_min_cost *find_min_cost_a(t_stack *a, t_stack *b)
 {
+	int min_cost;
+	int src_cost;
+	int target_cost;
+	struct s_stack_node *temp;
+	struct s_min_cost *min_cost_data;
+
+	min_cost = INT_MAX;
+	temp = a->top;
+	min_cost_data = (struct s_min_cost *)malloc(sizeof(struct s_min_cost));
+	while (temp)
+	{
+		src_cost = get_top_cost(a, temp->val);
+		target_cost = get_top_cost(b, find_best_target_in_stack_b(b, temp->val));
+		if (abs(src_cost) + abs(target_cost) < min_cost)
+		{
+			min_cost_data->src_cost = src_cost;
+			min_cost_data->target_cost = target_cost;
+			min_cost = abs(src_cost) + abs(target_cost);
+		}
+		temp = temp->next;
+	}
+	return (min_cost_data);
+}
+
+struct s_min_cost   *find_min_cost_b(t_stack *a, t_stack *b)
+{
+	int min_cost;
+	int src_cost;
+	int target_cost;
+	struct s_stack_node *temp;
+	struct s_min_cost *min_cost_data;
+
+	min_cost = INT_MAX;
+	temp = b->top;
+	min_cost_data = (struct s_min_cost *)malloc(sizeof(struct s_min_cost));
+	while (temp)
+	{
+		src_cost = get_top_cost(b, temp->val);
+		target_cost = get_top_cost(a, find_best_target_in_stack_a(a, temp->val));
+		if (abs(src_cost) + abs(target_cost) < min_cost)
+		{
+			min_cost_data->src_cost = src_cost;
+			min_cost_data->target_cost = target_cost;
+			min_cost = abs(src_cost) + abs(target_cost);
+		}
+		temp = temp->next;
+	}
+	return (min_cost_data);
+}
+
+void    move_min_to_top(t_stack *a)
+{
+	int i;
+	int min;
+	int instructions;
+
+	i = 0;
+	min = get_min(*a);
+	instructions = get_top_cost(a, min);
+	if (instructions >= 0)
+	{
+		while (i < instructions)
+		{
+			ft_ra(a);
+			i++;
+		}
+	}
+	else
+	{
+		while ( i < abs(instructions))
+		{
+			ft_rra(a);
+			i++;
+		}
+	}
+}
+
+
+void    cost_sort(t_stack *a, t_stack *b)
+{
+	struct s_min_cost *min_cost_data;
+
 	while (a->length > 3)
 	{
 		if (b->length < 2)
 			ft_pb(a, b);
 		else
 		{
-			t_stack cost;
-			init_stack(&cost);
-			struct s_stack_node *temp = a->last;
-			while (temp)
-			{
-				push(&cost, abs(cost_to_bring_to_top(a, temp->val)) + abs(cost_to_bring_to_top(b, find_best_target_in_stack_b(b, temp->val))));
-				temp = temp->prev;
-			}
-			int min = get_min(cost);
-			temp = a->top;
-			struct s_stack_node *temp2 = cost.top;
-			while (temp2 && temp && temp2->val != min)
-			{
-				temp = temp->next;
-				temp2 = temp2->next;
-			}
-			int cost_src = cost_to_bring_to_top(a, temp->val);
-			if (cost_src >= 0)
-			{
-				int i = 0;
-				while (i < cost_src)
-				{
-					ft_ra(a);
-					i++;
-				}
-			}
-			else
-			{
-				int i = 0;
-				while ( i < abs(cost_src))
-				{
-					ft_rra(a);
-					i++;
-				}
-			}
-			int cost_dst = cost_to_bring_to_top(b, find_best_target_in_stack_b(b, temp->val));
-			if (cost_dst >= 0)
-			{
-				int j = 0;
-				while (j < cost_dst)
-				{
-					ft_rb(b);
-					j++;
-				}
-			}
-			else
-			{
-				int j = 0;
-				while ( j < abs(cost_dst))
-				{
-					ft_rrb(b);
-					j++;
-				}
-			}
+			min_cost_data = find_min_cost_a(a, b);
+			rotate_stack_a(a, min_cost_data->src_cost);
+			rotate_stack_b(b, min_cost_data->target_cost);
+			free(min_cost_data);
 			ft_pb(a, b);
 		}
 	}
-
-}
-
-void    sort2(t_stack *a, t_stack *b)
-{
+	sort_small(a);
 	while (b->top)
 	{
-		t_stack cost;
-		init_stack(&cost);
-		struct s_stack_node *temp = b->last;
-		while (temp)
-		{
-			push(&cost, abs(cost_to_bring_to_top(b, temp->val)) + abs(cost_to_bring_to_top(a, get_target_of_b(a, temp->val))));
-			temp = temp->prev;
-		}
-		int min = get_min(cost);
-		temp = b->top;
-		struct s_stack_node *temp2 = cost.top;
-		while (temp2 && temp && temp2->val != min)
-		{
-			temp = temp->next;
-			temp2 = temp2->next;
-		}
-		int cost_src = cost_to_bring_to_top(b, temp->val);
-		if (cost_src >= 0)
-		{
-			int i = 0;
-			while (i < cost_src)
-			{
-				ft_rb(b);
-				i++;
-			}
-		}
-		else
-		{
-			int i = 0;
-			while ( i < abs(cost_src))
-			{
-				ft_rrb(b);
-				i++;
-			}
-		}
-		int cost_dst = cost_to_bring_to_top(a, get_target_of_b(a, temp->val));
-		if (cost_dst >= 0)
-		{
-			int j = 0;
-			while (j < cost_dst)
-			{
-				ft_ra(a);
-				j++;
-			}
-		}
-		else
-		{
-			int j = 0;
-			while ( j < abs(cost_dst))
-			{
-				ft_rra(a);
-				j++;
-			}
-		}
+		min_cost_data = find_min_cost_b(a, b);
+		rotate_stack_a(a, min_cost_data->target_cost);
+		rotate_stack_b(b, min_cost_data->src_cost);
+		free(min_cost_data);
 		ft_pa(a, b);
-
-
-
 	}
+	move_min_to_top(a);
 }
-
-
-
 
 int main(int argc, char *argv[])
 {
@@ -322,32 +259,7 @@ int main(int argc, char *argv[])
         b = (t_stack *)malloc(sizeof(t_stack));
         init_stack(b);
 
-
-	    sort(a, b);
-	    sort_small(a);
-	    sort2(a, b);
-
-	    int mmin = get_min(*a);
-	    int instructions = cost_to_bring_to_top(a, mmin);
-	    int i = 0;
-	    if (instructions >= 0)
-	    {
-		    while (i < instructions)
-		    {
-			    ft_ra(a);
-			    i++;
-		    }
-	    }
-	    else
-	    {
-		    while ( i < abs(instructions))
-		    {
-			    ft_rra(a);
-			    i++;
-		    }
-	    }
-
-
+	    cost_sort(a, b);
 
 //	    display_stack(a);
 //	    display_stack(b);

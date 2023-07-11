@@ -33,7 +33,6 @@ struct s_stack_node
 {
     struct s_stack_node	*prev;
     int					val;
-//    int                 index;
     struct s_stack_node	*next;
 };
 
@@ -43,6 +42,12 @@ typedef struct s_stack
     struct s_stack_node	*last;
     int					length;
 }						t_stack;
+
+struct s_min_cost
+{
+	int src_cost;
+	int target_cost;
+};
 
 // stack.c
 void	init_stack(t_stack *s);
@@ -67,7 +72,7 @@ void    ft_rrb(t_stack *b);
 // args.c
 int	        is_numeric(const char *str);
 long int	ft_atoi(const char *str);
-int	        has_duplicates(t_stack *s, int size);
+int	        has_duplicates(t_stack *s);
 void        handle_arguments(int argc, char *argv[], int *size, char ***args);
 t_stack	    *get_validated_stack(int size, char **args);
 

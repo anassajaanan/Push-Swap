@@ -48,12 +48,12 @@ long int	ft_atoi(const char *str)
     return (num * sign);
 }
 
-int	has_duplicates(t_stack *s, int size)
+int	has_duplicates(t_stack *s)
 {
     int					i;
     int					j;
     struct s_stack_node	*p;
-    int					array[size];
+    int					array[s->length];
 
     i = 0;
     p = s->top;
@@ -63,10 +63,10 @@ int	has_duplicates(t_stack *s, int size)
         p = p->next;
     }
     i = 0;
-    while (i < size - 1)
+    while (i < s->length - 1)
     {
         j = i + 1;
-        while (j < size)
+        while (j < s->length)
         {
             if (array[i] == array[j])
                 return (1);
@@ -121,7 +121,7 @@ t_stack	*get_validated_stack(int size, char **args)
             return (NULL);
         i--;
     }
-    if (has_duplicates(s, size))
+    if (has_duplicates(s))
         return (NULL);
     return (s);
 }
