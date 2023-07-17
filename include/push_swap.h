@@ -85,38 +85,12 @@ int     is_b_sorted(t_stack *s);
 int	    is_stack_sorted(t_stack *s);
 
 
-// ft_split
-static int	is_separator(char c, char sep);
-static int	count_words(const char *str, char sep);
-static void	copy_word(char *dest, const char *src, char sep);
-static void	add_words(char **array, const char *str, char sep);
+// ft_split.c
 char	    **ft_split(const char *str, char sep);
 
 
-//// quick_sort.c
-//void        quick_sort_stacks(t_stack *a, t_stack *b);
-//void        sort_two_elements(t_stack *a);
-//void        sort_three_elements(t_stack *a);
-//void        partition_elements(t_stack *a, t_stack *b, int pivot, int length);
-//void        insert_elements(t_stack *a, t_stack *b, int *array, int length);
-//
-//// quick_sort_utils.c
-//void        swap(int *a, int *b);
-//void	    bubble_sort(int A[], int size);
-//void        stack_to_array(int *array, t_stack *stack);
-//int         get_pivot(int *array, int length);
 
-//// radix_sort.c
-//void        radix_sort_stacks(t_stack *a, t_stack *b);
-//void        process_radix_bits(t_stack *a, t_stack *b, int max_bits);
-//void        process_stack_a(t_stack *a, t_stack *b, int bit_position, int len, int *stop);
-//void        process_stack_b(t_stack *a, t_stack *b, int bit_position, int len, int *stop);
-//
-//// radix_sort_utils.c
-//int         count_bits(int max_num);
-//int         all_bits_zero(t_stack *stack, int bit_position);
-//int         all_bits_one(t_stack *stack, int bit_position);
-//void        adjust_values(t_stack *stack, int min_value);
-//void        restore_values(t_stack *stack, int min_value);
+
+
 
 #endif //PUSH_SWAP_H

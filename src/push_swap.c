@@ -243,6 +243,122 @@ void    cost_sort(t_stack *a, t_stack *b)
 	move_min_to_top(a);
 }
 
+// quick sort
+
+void	swap(int *a, int *b)
+{
+	int temp;
+
+	temp = *a;
+	*a = *b;
+	*b = temp;
+}
+
+void	bubble_sort(int A[], int size)
+{
+	int	i;
+	int	j;
+	int	flag;
+
+	i = 0;
+	while (i < size - 1)
+	{
+		j = 0;
+		flag = 0;
+		while (j < size - 1 - i)
+		{
+			if (A[j] > A[j + 1])
+			{
+				swap(&A[j], &A[j + 1]);
+				flag = 1;
+			}
+			j++;
+		}
+		if (flag == 0)
+			return ;
+		i++;
+	}
+}
+
+void    stack_to_array(int *array, t_stack *stack, int length)
+{
+	int i;
+	struct s_stack_node *p;
+
+	i = 0;
+	p = stack->top;
+	while (i < length)
+	{
+		array[i] = p->val;
+		p = p->next;
+		i++;
+	}
+}
+
+int get_pivot(t_stack *stack, int length)
+{
+	int *array = (int *)malloc(sizeof(int) * length);
+	stack_to_array(array, stack, length);
+	bubble_sort(array, length);
+	int pivot = array[length / 2];
+	free(array);
+	return (pivot);
+}
+
+void    quick_sort(t_stack *a, t_stack *b, int len)
+{
+	if(len <= 1)
+		return;
+	else if (len == 2)
+	{
+		if (a->top->val > a->top->next->val)
+			ft_sa(a);
+		return;
+	}
+	else if (len == 3)
+	{
+		int max = get_max(*a);
+		if (a->top->val == max)
+			ft_ra(a);
+		else if (a->top->next->val == max)
+			ft_rra(a);
+		if (a->top->val > a->top->next->val)
+			ft_sa(a);
+		return;
+	}
+	else
+	{
+		int pivot = get_pivot(a, len);
+		int i = 0;
+		while (i < len / 2)
+		{
+			if (a->top->val < pivot)
+			{
+				ft_pb(a, b);
+				i++;
+			}
+			else if (a->last->val < pivot)
+			{
+				ft_rra(a);
+				ft_pb(a, b);
+				i++;
+			}
+			else
+				ft_ra(a);
+		}
+		int chunk_size = len / 2;
+		quick_sort(a, b, len - len / 2);
+		if (chunk_size == 2)
+		{
+			if (b->top->val < b->top->next->val)
+				ft_sb(b);
+			ft_pa(a, b);
+			ft_pa(a, b);
+		}
+	}
+}
+
+
 int main(int argc, char *argv[])
 {
     int size;
@@ -259,7 +375,20 @@ int main(int argc, char *argv[])
         b = (t_stack *)malloc(sizeof(t_stack));
         init_stack(b);
 
-	    cost_sort(a, b);
+
+
+	    quick_sort(a, b, a->length);
+
+	    while (b->top)
+	    {
+		    struct s_min_cost *min_cost_data;
+		    min_cost_data = find_min_cost_b(a, b);
+		    rotate_stack_a(a, min_cost_data->target_cost);
+		    rotate_stack_b(b, min_cost_data->src_cost);
+		    free(min_cost_data);
+		    ft_pa(a, b);
+	    }
+	    move_min_to_top(a);
 
 //	    display_stack(a);
 //	    display_stack(b);
