@@ -84,6 +84,18 @@
 		<Unit filename="/Users/aajaanan/Desktop/push/lib/ft_split.c">
 			<Option target="push"/>
 		</Unit>
+		<Unit filename="/Users/aajaanan/Desktop/push/sorting_algorithms/cost_sort.c">
+			<Option target="push"/>
+		</Unit>
+		<Unit filename="/Users/aajaanan/Desktop/push/sorting_algorithms/cost_sort_utils.c">
+			<Option target="push"/>
+		</Unit>
+		<Unit filename="/Users/aajaanan/Desktop/push/sorting_algorithms/quick_sort.c">
+			<Option target="push"/>
+		</Unit>
+		<Unit filename="/Users/aajaanan/Desktop/push/sorting_algorithms/small_sort.c">
+			<Option target="push"/>
+		</Unit>
 		<Unit filename="/Users/aajaanan/Desktop/push/src/args.c">
 			<Option target="push"/>
 		</Unit>
@@ -91,9 +103,6 @@
 			<Option target="push"/>
 		</Unit>
 		<Unit filename="/Users/aajaanan/Desktop/push/src/push_swap_utils.c">
-			<Option target="push"/>
-		</Unit>
-		<Unit filename="/Users/aajaanan/Desktop/push/src/quick_sort.c">
 			<Option target="push"/>
 		</Unit>
 		<Unit filename="/Users/aajaanan/Desktop/push/src/stack.c">

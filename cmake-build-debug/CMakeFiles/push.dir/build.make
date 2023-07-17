@@ -97,24 +97,10 @@ CMakeFiles/push.dir/src/args.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/push.dir/src/args.c.s"
 	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/aajaanan/Desktop/push/src/args.c -o CMakeFiles/push.dir/src/args.c.s
 
-CMakeFiles/push.dir/src/push_swap.c.o: CMakeFiles/push.dir/flags.make
-CMakeFiles/push.dir/src/push_swap.c.o: /Users/aajaanan/Desktop/push/src/push_swap.c
-CMakeFiles/push.dir/src/push_swap.c.o: CMakeFiles/push.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/aajaanan/Desktop/push/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building C object CMakeFiles/push.dir/src/push_swap.c.o"
-	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/push.dir/src/push_swap.c.o -MF CMakeFiles/push.dir/src/push_swap.c.o.d -o CMakeFiles/push.dir/src/push_swap.c.o -c /Users/aajaanan/Desktop/push/src/push_swap.c
-
-CMakeFiles/push.dir/src/push_swap.c.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/push.dir/src/push_swap.c.i"
-	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Users/aajaanan/Desktop/push/src/push_swap.c > CMakeFiles/push.dir/src/push_swap.c.i
-
-CMakeFiles/push.dir/src/push_swap.c.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/push.dir/src/push_swap.c.s"
-	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/aajaanan/Desktop/push/src/push_swap.c -o CMakeFiles/push.dir/src/push_swap.c.s
-
 CMakeFiles/push.dir/src/push_swap_utils.c.o: CMakeFiles/push.dir/flags.make
 CMakeFiles/push.dir/src/push_swap_utils.c.o: /Users/aajaanan/Desktop/push/src/push_swap_utils.c
 CMakeFiles/push.dir/src/push_swap_utils.c.o: CMakeFiles/push.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/aajaanan/Desktop/push/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building C object CMakeFiles/push.dir/src/push_swap_utils.c.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/aajaanan/Desktop/push/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building C object CMakeFiles/push.dir/src/push_swap_utils.c.o"
 	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/push.dir/src/push_swap_utils.c.o -MF CMakeFiles/push.dir/src/push_swap_utils.c.o.d -o CMakeFiles/push.dir/src/push_swap_utils.c.o -c /Users/aajaanan/Desktop/push/src/push_swap_utils.c
 
 CMakeFiles/push.dir/src/push_swap_utils.c.i: cmake_force
@@ -128,7 +114,7 @@ CMakeFiles/push.dir/src/push_swap_utils.c.s: cmake_force
 CMakeFiles/push.dir/src/stack.c.o: CMakeFiles/push.dir/flags.make
 CMakeFiles/push.dir/src/stack.c.o: /Users/aajaanan/Desktop/push/src/stack.c
 CMakeFiles/push.dir/src/stack.c.o: CMakeFiles/push.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/aajaanan/Desktop/push/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building C object CMakeFiles/push.dir/src/stack.c.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/aajaanan/Desktop/push/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building C object CMakeFiles/push.dir/src/stack.c.o"
 	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/push.dir/src/stack.c.o -MF CMakeFiles/push.dir/src/stack.c.o.d -o CMakeFiles/push.dir/src/stack.c.o -c /Users/aajaanan/Desktop/push/src/stack.c
 
 CMakeFiles/push.dir/src/stack.c.i: cmake_force
@@ -142,7 +128,7 @@ CMakeFiles/push.dir/src/stack.c.s: cmake_force
 CMakeFiles/push.dir/src/stack_operations_a.c.o: CMakeFiles/push.dir/flags.make
 CMakeFiles/push.dir/src/stack_operations_a.c.o: /Users/aajaanan/Desktop/push/src/stack_operations_a.c
 CMakeFiles/push.dir/src/stack_operations_a.c.o: CMakeFiles/push.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/aajaanan/Desktop/push/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Building C object CMakeFiles/push.dir/src/stack_operations_a.c.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/aajaanan/Desktop/push/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building C object CMakeFiles/push.dir/src/stack_operations_a.c.o"
 	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/push.dir/src/stack_operations_a.c.o -MF CMakeFiles/push.dir/src/stack_operations_a.c.o.d -o CMakeFiles/push.dir/src/stack_operations_a.c.o -c /Users/aajaanan/Desktop/push/src/stack_operations_a.c
 
 CMakeFiles/push.dir/src/stack_operations_a.c.i: cmake_force
@@ -156,7 +142,7 @@ CMakeFiles/push.dir/src/stack_operations_a.c.s: cmake_force
 CMakeFiles/push.dir/src/stack_operations_b.c.o: CMakeFiles/push.dir/flags.make
 CMakeFiles/push.dir/src/stack_operations_b.c.o: /Users/aajaanan/Desktop/push/src/stack_operations_b.c
 CMakeFiles/push.dir/src/stack_operations_b.c.o: CMakeFiles/push.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/aajaanan/Desktop/push/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "Building C object CMakeFiles/push.dir/src/stack_operations_b.c.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/aajaanan/Desktop/push/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Building C object CMakeFiles/push.dir/src/stack_operations_b.c.o"
 	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/push.dir/src/stack_operations_b.c.o -MF CMakeFiles/push.dir/src/stack_operations_b.c.o.d -o CMakeFiles/push.dir/src/stack_operations_b.c.o -c /Users/aajaanan/Desktop/push/src/stack_operations_b.c
 
 CMakeFiles/push.dir/src/stack_operations_b.c.i: cmake_force
@@ -167,45 +153,107 @@ CMakeFiles/push.dir/src/stack_operations_b.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/push.dir/src/stack_operations_b.c.s"
 	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/aajaanan/Desktop/push/src/stack_operations_b.c -o CMakeFiles/push.dir/src/stack_operations_b.c.s
 
-CMakeFiles/push.dir/src/quick_sort.c.o: CMakeFiles/push.dir/flags.make
-CMakeFiles/push.dir/src/quick_sort.c.o: /Users/aajaanan/Desktop/push/src/quick_sort.c
-CMakeFiles/push.dir/src/quick_sort.c.o: CMakeFiles/push.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/aajaanan/Desktop/push/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_8) "Building C object CMakeFiles/push.dir/src/quick_sort.c.o"
-	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/push.dir/src/quick_sort.c.o -MF CMakeFiles/push.dir/src/quick_sort.c.o.d -o CMakeFiles/push.dir/src/quick_sort.c.o -c /Users/aajaanan/Desktop/push/src/quick_sort.c
+CMakeFiles/push.dir/sorting_algorithms/quick_sort.c.o: CMakeFiles/push.dir/flags.make
+CMakeFiles/push.dir/sorting_algorithms/quick_sort.c.o: /Users/aajaanan/Desktop/push/sorting_algorithms/quick_sort.c
+CMakeFiles/push.dir/sorting_algorithms/quick_sort.c.o: CMakeFiles/push.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/aajaanan/Desktop/push/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "Building C object CMakeFiles/push.dir/sorting_algorithms/quick_sort.c.o"
+	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/push.dir/sorting_algorithms/quick_sort.c.o -MF CMakeFiles/push.dir/sorting_algorithms/quick_sort.c.o.d -o CMakeFiles/push.dir/sorting_algorithms/quick_sort.c.o -c /Users/aajaanan/Desktop/push/sorting_algorithms/quick_sort.c
 
-CMakeFiles/push.dir/src/quick_sort.c.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/push.dir/src/quick_sort.c.i"
-	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Users/aajaanan/Desktop/push/src/quick_sort.c > CMakeFiles/push.dir/src/quick_sort.c.i
+CMakeFiles/push.dir/sorting_algorithms/quick_sort.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/push.dir/sorting_algorithms/quick_sort.c.i"
+	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Users/aajaanan/Desktop/push/sorting_algorithms/quick_sort.c > CMakeFiles/push.dir/sorting_algorithms/quick_sort.c.i
 
-CMakeFiles/push.dir/src/quick_sort.c.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/push.dir/src/quick_sort.c.s"
-	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/aajaanan/Desktop/push/src/quick_sort.c -o CMakeFiles/push.dir/src/quick_sort.c.s
+CMakeFiles/push.dir/sorting_algorithms/quick_sort.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/push.dir/sorting_algorithms/quick_sort.c.s"
+	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/aajaanan/Desktop/push/sorting_algorithms/quick_sort.c -o CMakeFiles/push.dir/sorting_algorithms/quick_sort.c.s
+
+CMakeFiles/push.dir/sorting_algorithms/cost_sort.c.o: CMakeFiles/push.dir/flags.make
+CMakeFiles/push.dir/sorting_algorithms/cost_sort.c.o: /Users/aajaanan/Desktop/push/sorting_algorithms/cost_sort.c
+CMakeFiles/push.dir/sorting_algorithms/cost_sort.c.o: CMakeFiles/push.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/aajaanan/Desktop/push/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_8) "Building C object CMakeFiles/push.dir/sorting_algorithms/cost_sort.c.o"
+	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/push.dir/sorting_algorithms/cost_sort.c.o -MF CMakeFiles/push.dir/sorting_algorithms/cost_sort.c.o.d -o CMakeFiles/push.dir/sorting_algorithms/cost_sort.c.o -c /Users/aajaanan/Desktop/push/sorting_algorithms/cost_sort.c
+
+CMakeFiles/push.dir/sorting_algorithms/cost_sort.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/push.dir/sorting_algorithms/cost_sort.c.i"
+	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Users/aajaanan/Desktop/push/sorting_algorithms/cost_sort.c > CMakeFiles/push.dir/sorting_algorithms/cost_sort.c.i
+
+CMakeFiles/push.dir/sorting_algorithms/cost_sort.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/push.dir/sorting_algorithms/cost_sort.c.s"
+	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/aajaanan/Desktop/push/sorting_algorithms/cost_sort.c -o CMakeFiles/push.dir/sorting_algorithms/cost_sort.c.s
+
+CMakeFiles/push.dir/src/push_swap.c.o: CMakeFiles/push.dir/flags.make
+CMakeFiles/push.dir/src/push_swap.c.o: /Users/aajaanan/Desktop/push/src/push_swap.c
+CMakeFiles/push.dir/src/push_swap.c.o: CMakeFiles/push.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/aajaanan/Desktop/push/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_9) "Building C object CMakeFiles/push.dir/src/push_swap.c.o"
+	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/push.dir/src/push_swap.c.o -MF CMakeFiles/push.dir/src/push_swap.c.o.d -o CMakeFiles/push.dir/src/push_swap.c.o -c /Users/aajaanan/Desktop/push/src/push_swap.c
+
+CMakeFiles/push.dir/src/push_swap.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/push.dir/src/push_swap.c.i"
+	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Users/aajaanan/Desktop/push/src/push_swap.c > CMakeFiles/push.dir/src/push_swap.c.i
+
+CMakeFiles/push.dir/src/push_swap.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/push.dir/src/push_swap.c.s"
+	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/aajaanan/Desktop/push/src/push_swap.c -o CMakeFiles/push.dir/src/push_swap.c.s
+
+CMakeFiles/push.dir/sorting_algorithms/small_sort.c.o: CMakeFiles/push.dir/flags.make
+CMakeFiles/push.dir/sorting_algorithms/small_sort.c.o: /Users/aajaanan/Desktop/push/sorting_algorithms/small_sort.c
+CMakeFiles/push.dir/sorting_algorithms/small_sort.c.o: CMakeFiles/push.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/aajaanan/Desktop/push/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_10) "Building C object CMakeFiles/push.dir/sorting_algorithms/small_sort.c.o"
+	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/push.dir/sorting_algorithms/small_sort.c.o -MF CMakeFiles/push.dir/sorting_algorithms/small_sort.c.o.d -o CMakeFiles/push.dir/sorting_algorithms/small_sort.c.o -c /Users/aajaanan/Desktop/push/sorting_algorithms/small_sort.c
+
+CMakeFiles/push.dir/sorting_algorithms/small_sort.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/push.dir/sorting_algorithms/small_sort.c.i"
+	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Users/aajaanan/Desktop/push/sorting_algorithms/small_sort.c > CMakeFiles/push.dir/sorting_algorithms/small_sort.c.i
+
+CMakeFiles/push.dir/sorting_algorithms/small_sort.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/push.dir/sorting_algorithms/small_sort.c.s"
+	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/aajaanan/Desktop/push/sorting_algorithms/small_sort.c -o CMakeFiles/push.dir/sorting_algorithms/small_sort.c.s
+
+CMakeFiles/push.dir/sorting_algorithms/cost_sort_utils.c.o: CMakeFiles/push.dir/flags.make
+CMakeFiles/push.dir/sorting_algorithms/cost_sort_utils.c.o: /Users/aajaanan/Desktop/push/sorting_algorithms/cost_sort_utils.c
+CMakeFiles/push.dir/sorting_algorithms/cost_sort_utils.c.o: CMakeFiles/push.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/aajaanan/Desktop/push/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_11) "Building C object CMakeFiles/push.dir/sorting_algorithms/cost_sort_utils.c.o"
+	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/push.dir/sorting_algorithms/cost_sort_utils.c.o -MF CMakeFiles/push.dir/sorting_algorithms/cost_sort_utils.c.o.d -o CMakeFiles/push.dir/sorting_algorithms/cost_sort_utils.c.o -c /Users/aajaanan/Desktop/push/sorting_algorithms/cost_sort_utils.c
+
+CMakeFiles/push.dir/sorting_algorithms/cost_sort_utils.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/push.dir/sorting_algorithms/cost_sort_utils.c.i"
+	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Users/aajaanan/Desktop/push/sorting_algorithms/cost_sort_utils.c > CMakeFiles/push.dir/sorting_algorithms/cost_sort_utils.c.i
+
+CMakeFiles/push.dir/sorting_algorithms/cost_sort_utils.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/push.dir/sorting_algorithms/cost_sort_utils.c.s"
+	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/aajaanan/Desktop/push/sorting_algorithms/cost_sort_utils.c -o CMakeFiles/push.dir/sorting_algorithms/cost_sort_utils.c.s
 
 # Object files for target push
 push_OBJECTS = \
 "CMakeFiles/push.dir/lib/ft_split.c.o" \
 "CMakeFiles/push.dir/src/args.c.o" \
-"CMakeFiles/push.dir/src/push_swap.c.o" \
 "CMakeFiles/push.dir/src/push_swap_utils.c.o" \
 "CMakeFiles/push.dir/src/stack.c.o" \
 "CMakeFiles/push.dir/src/stack_operations_a.c.o" \
 "CMakeFiles/push.dir/src/stack_operations_b.c.o" \
-"CMakeFiles/push.dir/src/quick_sort.c.o"
+"CMakeFiles/push.dir/sorting_algorithms/quick_sort.c.o" \
+"CMakeFiles/push.dir/sorting_algorithms/cost_sort.c.o" \
+"CMakeFiles/push.dir/src/push_swap.c.o" \
+"CMakeFiles/push.dir/sorting_algorithms/small_sort.c.o" \
+"CMakeFiles/push.dir/sorting_algorithms/cost_sort_utils.c.o"
 
 # External object files for target push
 push_EXTERNAL_OBJECTS =
 
 push: CMakeFiles/push.dir/lib/ft_split.c.o
 push: CMakeFiles/push.dir/src/args.c.o
-push: CMakeFiles/push.dir/src/push_swap.c.o
 push: CMakeFiles/push.dir/src/push_swap_utils.c.o
 push: CMakeFiles/push.dir/src/stack.c.o
 push: CMakeFiles/push.dir/src/stack_operations_a.c.o
 push: CMakeFiles/push.dir/src/stack_operations_b.c.o
-push: CMakeFiles/push.dir/src/quick_sort.c.o
+push: CMakeFiles/push.dir/sorting_algorithms/quick_sort.c.o
+push: CMakeFiles/push.dir/sorting_algorithms/cost_sort.c.o
+push: CMakeFiles/push.dir/src/push_swap.c.o
+push: CMakeFiles/push.dir/sorting_algorithms/small_sort.c.o
+push: CMakeFiles/push.dir/sorting_algorithms/cost_sort_utils.c.o
 push: CMakeFiles/push.dir/build.make
 push: CMakeFiles/push.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/Users/aajaanan/Desktop/push/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_9) "Linking C executable push"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/Users/aajaanan/Desktop/push/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_12) "Linking C executable push"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/push.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.

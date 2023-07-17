@@ -153,6 +153,102 @@ lib/ft_split.c.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/push.dir/build.make CMakeFiles/push.dir/lib/ft_split.c.s
 .PHONY : lib/ft_split.c.s
 
+sorting_algorithms/cost_sort.o: sorting_algorithms/cost_sort.c.o
+.PHONY : sorting_algorithms/cost_sort.o
+
+# target to build an object file
+sorting_algorithms/cost_sort.c.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/push.dir/build.make CMakeFiles/push.dir/sorting_algorithms/cost_sort.c.o
+.PHONY : sorting_algorithms/cost_sort.c.o
+
+sorting_algorithms/cost_sort.i: sorting_algorithms/cost_sort.c.i
+.PHONY : sorting_algorithms/cost_sort.i
+
+# target to preprocess a source file
+sorting_algorithms/cost_sort.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/push.dir/build.make CMakeFiles/push.dir/sorting_algorithms/cost_sort.c.i
+.PHONY : sorting_algorithms/cost_sort.c.i
+
+sorting_algorithms/cost_sort.s: sorting_algorithms/cost_sort.c.s
+.PHONY : sorting_algorithms/cost_sort.s
+
+# target to generate assembly for a file
+sorting_algorithms/cost_sort.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/push.dir/build.make CMakeFiles/push.dir/sorting_algorithms/cost_sort.c.s
+.PHONY : sorting_algorithms/cost_sort.c.s
+
+sorting_algorithms/cost_sort_utils.o: sorting_algorithms/cost_sort_utils.c.o
+.PHONY : sorting_algorithms/cost_sort_utils.o
+
+# target to build an object file
+sorting_algorithms/cost_sort_utils.c.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/push.dir/build.make CMakeFiles/push.dir/sorting_algorithms/cost_sort_utils.c.o
+.PHONY : sorting_algorithms/cost_sort_utils.c.o
+
+sorting_algorithms/cost_sort_utils.i: sorting_algorithms/cost_sort_utils.c.i
+.PHONY : sorting_algorithms/cost_sort_utils.i
+
+# target to preprocess a source file
+sorting_algorithms/cost_sort_utils.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/push.dir/build.make CMakeFiles/push.dir/sorting_algorithms/cost_sort_utils.c.i
+.PHONY : sorting_algorithms/cost_sort_utils.c.i
+
+sorting_algorithms/cost_sort_utils.s: sorting_algorithms/cost_sort_utils.c.s
+.PHONY : sorting_algorithms/cost_sort_utils.s
+
+# target to generate assembly for a file
+sorting_algorithms/cost_sort_utils.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/push.dir/build.make CMakeFiles/push.dir/sorting_algorithms/cost_sort_utils.c.s
+.PHONY : sorting_algorithms/cost_sort_utils.c.s
+
+sorting_algorithms/quick_sort.o: sorting_algorithms/quick_sort.c.o
+.PHONY : sorting_algorithms/quick_sort.o
+
+# target to build an object file
+sorting_algorithms/quick_sort.c.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/push.dir/build.make CMakeFiles/push.dir/sorting_algorithms/quick_sort.c.o
+.PHONY : sorting_algorithms/quick_sort.c.o
+
+sorting_algorithms/quick_sort.i: sorting_algorithms/quick_sort.c.i
+.PHONY : sorting_algorithms/quick_sort.i
+
+# target to preprocess a source file
+sorting_algorithms/quick_sort.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/push.dir/build.make CMakeFiles/push.dir/sorting_algorithms/quick_sort.c.i
+.PHONY : sorting_algorithms/quick_sort.c.i
+
+sorting_algorithms/quick_sort.s: sorting_algorithms/quick_sort.c.s
+.PHONY : sorting_algorithms/quick_sort.s
+
+# target to generate assembly for a file
+sorting_algorithms/quick_sort.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/push.dir/build.make CMakeFiles/push.dir/sorting_algorithms/quick_sort.c.s
+.PHONY : sorting_algorithms/quick_sort.c.s
+
+sorting_algorithms/small_sort.o: sorting_algorithms/small_sort.c.o
+.PHONY : sorting_algorithms/small_sort.o
+
+# target to build an object file
+sorting_algorithms/small_sort.c.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/push.dir/build.make CMakeFiles/push.dir/sorting_algorithms/small_sort.c.o
+.PHONY : sorting_algorithms/small_sort.c.o
+
+sorting_algorithms/small_sort.i: sorting_algorithms/small_sort.c.i
+.PHONY : sorting_algorithms/small_sort.i
+
+# target to preprocess a source file
+sorting_algorithms/small_sort.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/push.dir/build.make CMakeFiles/push.dir/sorting_algorithms/small_sort.c.i
+.PHONY : sorting_algorithms/small_sort.c.i
+
+sorting_algorithms/small_sort.s: sorting_algorithms/small_sort.c.s
+.PHONY : sorting_algorithms/small_sort.s
+
+# target to generate assembly for a file
+sorting_algorithms/small_sort.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/push.dir/build.make CMakeFiles/push.dir/sorting_algorithms/small_sort.c.s
+.PHONY : sorting_algorithms/small_sort.c.s
+
 src/args.o: src/args.c.o
 .PHONY : src/args.o
 
@@ -224,30 +320,6 @@ src/push_swap_utils.s: src/push_swap_utils.c.s
 src/push_swap_utils.c.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/push.dir/build.make CMakeFiles/push.dir/src/push_swap_utils.c.s
 .PHONY : src/push_swap_utils.c.s
-
-src/quick_sort.o: src/quick_sort.c.o
-.PHONY : src/quick_sort.o
-
-# target to build an object file
-src/quick_sort.c.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/push.dir/build.make CMakeFiles/push.dir/src/quick_sort.c.o
-.PHONY : src/quick_sort.c.o
-
-src/quick_sort.i: src/quick_sort.c.i
-.PHONY : src/quick_sort.i
-
-# target to preprocess a source file
-src/quick_sort.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/push.dir/build.make CMakeFiles/push.dir/src/quick_sort.c.i
-.PHONY : src/quick_sort.c.i
-
-src/quick_sort.s: src/quick_sort.c.s
-.PHONY : src/quick_sort.s
-
-# target to generate assembly for a file
-src/quick_sort.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/push.dir/build.make CMakeFiles/push.dir/src/quick_sort.c.s
-.PHONY : src/quick_sort.c.s
 
 src/stack.o: src/stack.c.o
 .PHONY : src/stack.o
@@ -333,6 +405,18 @@ help:
 	@echo "... lib/ft_split.o"
 	@echo "... lib/ft_split.i"
 	@echo "... lib/ft_split.s"
+	@echo "... sorting_algorithms/cost_sort.o"
+	@echo "... sorting_algorithms/cost_sort.i"
+	@echo "... sorting_algorithms/cost_sort.s"
+	@echo "... sorting_algorithms/cost_sort_utils.o"
+	@echo "... sorting_algorithms/cost_sort_utils.i"
+	@echo "... sorting_algorithms/cost_sort_utils.s"
+	@echo "... sorting_algorithms/quick_sort.o"
+	@echo "... sorting_algorithms/quick_sort.i"
+	@echo "... sorting_algorithms/quick_sort.s"
+	@echo "... sorting_algorithms/small_sort.o"
+	@echo "... sorting_algorithms/small_sort.i"
+	@echo "... sorting_algorithms/small_sort.s"
 	@echo "... src/args.o"
 	@echo "... src/args.i"
 	@echo "... src/args.s"
@@ -342,9 +426,6 @@ help:
 	@echo "... src/push_swap_utils.o"
 	@echo "... src/push_swap_utils.i"
 	@echo "... src/push_swap_utils.s"
-	@echo "... src/quick_sort.o"
-	@echo "... src/quick_sort.i"
-	@echo "... src/quick_sort.s"
 	@echo "... src/stack.o"
 	@echo "... src/stack.i"
 	@echo "... src/stack.s"
