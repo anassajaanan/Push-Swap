@@ -249,78 +249,6 @@ src/quick_sort.c.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/push.dir/build.make CMakeFiles/push.dir/src/quick_sort.c.s
 .PHONY : src/quick_sort.c.s
 
-src/quick_sort_utils.o: src/quick_sort_utils.c.o
-.PHONY : src/quick_sort_utils.o
-
-# target to build an object file
-src/quick_sort_utils.c.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/push.dir/build.make CMakeFiles/push.dir/src/quick_sort_utils.c.o
-.PHONY : src/quick_sort_utils.c.o
-
-src/quick_sort_utils.i: src/quick_sort_utils.c.i
-.PHONY : src/quick_sort_utils.i
-
-# target to preprocess a source file
-src/quick_sort_utils.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/push.dir/build.make CMakeFiles/push.dir/src/quick_sort_utils.c.i
-.PHONY : src/quick_sort_utils.c.i
-
-src/quick_sort_utils.s: src/quick_sort_utils.c.s
-.PHONY : src/quick_sort_utils.s
-
-# target to generate assembly for a file
-src/quick_sort_utils.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/push.dir/build.make CMakeFiles/push.dir/src/quick_sort_utils.c.s
-.PHONY : src/quick_sort_utils.c.s
-
-src/radix_sort.o: src/radix_sort.c.o
-.PHONY : src/radix_sort.o
-
-# target to build an object file
-src/radix_sort.c.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/push.dir/build.make CMakeFiles/push.dir/src/radix_sort.c.o
-.PHONY : src/radix_sort.c.o
-
-src/radix_sort.i: src/radix_sort.c.i
-.PHONY : src/radix_sort.i
-
-# target to preprocess a source file
-src/radix_sort.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/push.dir/build.make CMakeFiles/push.dir/src/radix_sort.c.i
-.PHONY : src/radix_sort.c.i
-
-src/radix_sort.s: src/radix_sort.c.s
-.PHONY : src/radix_sort.s
-
-# target to generate assembly for a file
-src/radix_sort.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/push.dir/build.make CMakeFiles/push.dir/src/radix_sort.c.s
-.PHONY : src/radix_sort.c.s
-
-src/radix_sort_utils.o: src/radix_sort_utils.c.o
-.PHONY : src/radix_sort_utils.o
-
-# target to build an object file
-src/radix_sort_utils.c.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/push.dir/build.make CMakeFiles/push.dir/src/radix_sort_utils.c.o
-.PHONY : src/radix_sort_utils.c.o
-
-src/radix_sort_utils.i: src/radix_sort_utils.c.i
-.PHONY : src/radix_sort_utils.i
-
-# target to preprocess a source file
-src/radix_sort_utils.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/push.dir/build.make CMakeFiles/push.dir/src/radix_sort_utils.c.i
-.PHONY : src/radix_sort_utils.c.i
-
-src/radix_sort_utils.s: src/radix_sort_utils.c.s
-.PHONY : src/radix_sort_utils.s
-
-# target to generate assembly for a file
-src/radix_sort_utils.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/push.dir/build.make CMakeFiles/push.dir/src/radix_sort_utils.c.s
-.PHONY : src/radix_sort_utils.c.s
-
 src/stack.o: src/stack.c.o
 .PHONY : src/stack.o
 
@@ -417,15 +345,6 @@ help:
 	@echo "... src/quick_sort.o"
 	@echo "... src/quick_sort.i"
 	@echo "... src/quick_sort.s"
-	@echo "... src/quick_sort_utils.o"
-	@echo "... src/quick_sort_utils.i"
-	@echo "... src/quick_sort_utils.s"
-	@echo "... src/radix_sort.o"
-	@echo "... src/radix_sort.i"
-	@echo "... src/radix_sort.s"
-	@echo "... src/radix_sort_utils.o"
-	@echo "... src/radix_sort_utils.i"
-	@echo "... src/radix_sort_utils.s"
 	@echo "... src/stack.o"
 	@echo "... src/stack.i"
 	@echo "... src/stack.s"

@@ -96,15 +96,6 @@
 		<Unit filename="/Users/aajaanan/Desktop/push/src/quick_sort.c">
 			<Option target="push"/>
 		</Unit>
-		<Unit filename="/Users/aajaanan/Desktop/push/src/quick_sort_utils.c">
-			<Option target="push"/>
-		</Unit>
-		<Unit filename="/Users/aajaanan/Desktop/push/src/radix_sort.c">
-			<Option target="push"/>
-		</Unit>
-		<Unit filename="/Users/aajaanan/Desktop/push/src/radix_sort_utils.c">
-			<Option target="push"/>
-		</Unit>
 		<Unit filename="/Users/aajaanan/Desktop/push/src/stack.c">
 			<Option target="push"/>
 		</Unit>

@@ -218,20 +218,6 @@ void    cost_sort(t_stack *a, t_stack *b)
 {
 	struct s_min_cost *min_cost_data;
 
-	while (a->length > 3)
-	{
-		if (b->length < 2)
-			ft_pb(a, b);
-		else
-		{
-			min_cost_data = find_min_cost_a(a, b);
-			rotate_stack_a(a, min_cost_data->src_cost);
-			rotate_stack_b(b, min_cost_data->target_cost);
-			free(min_cost_data);
-			ft_pb(a, b);
-		}
-	}
-	sort_small(a);
 	while (b->top)
 	{
 		min_cost_data = find_min_cost_b(a, b);
@@ -305,32 +291,16 @@ int get_pivot(t_stack *stack, int length)
 	return (pivot);
 }
 
-void    quick_sort(t_stack *a, t_stack *b, int len)
+void    quick_sort(t_stack *a, t_stack *b)
 {
-	if(len <= 1)
-		return;
-	else if (len == 2)
-	{
-		if (a->top->val > a->top->next->val)
-			ft_sa(a);
-		return;
-	}
-	else if (len == 3)
-	{
-		int max = get_max(*a);
-		if (a->top->val == max)
-			ft_ra(a);
-		else if (a->top->next->val == max)
-			ft_rra(a);
-		if (a->top->val > a->top->next->val)
-			ft_sa(a);
-		return;
-	}
+	if (a->length <= 3)
+		sort_small(a);
 	else
 	{
-		int pivot = get_pivot(a, len);
+		int pivot = get_pivot(a, a->length);
 		int i = 0;
-		while (i < len / 2)
+		int len = a->length / 2;
+		while (i < len)
 		{
 			if (a->top->val < pivot)
 			{
@@ -346,15 +316,21 @@ void    quick_sort(t_stack *a, t_stack *b, int len)
 			else
 				ft_ra(a);
 		}
-		int chunk_size = len / 2;
-		quick_sort(a, b, len - len / 2);
-		if (chunk_size == 2)
-		{
-			if (b->top->val < b->top->next->val)
-				ft_sb(b);
-			ft_pa(a, b);
-			ft_pa(a, b);
-		}
+		quick_sort(a, b);
+	}
+}
+
+void    quick_cost_sort(t_stack *a, t_stack *b)
+{
+	if (is_a_sorted(a))
+		return;
+	if(a->length <= 3)
+		sort_small(a);
+	else if (a->length > 3)
+	{
+		quick_sort(a, b);
+		sort_small(a);
+		cost_sort(a, b);
 	}
 }
 
@@ -376,19 +352,9 @@ int main(int argc, char *argv[])
         init_stack(b);
 
 
+	    quick_cost_sort(a, b);
 
-	    quick_sort(a, b, a->length);
 
-	    while (b->top)
-	    {
-		    struct s_min_cost *min_cost_data;
-		    min_cost_data = find_min_cost_b(a, b);
-		    rotate_stack_a(a, min_cost_data->target_cost);
-		    rotate_stack_b(b, min_cost_data->src_cost);
-		    free(min_cost_data);
-		    ft_pa(a, b);
-	    }
-	    move_min_to_top(a);
 
 //	    display_stack(a);
 //	    display_stack(b);
