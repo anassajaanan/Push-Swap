@@ -110,6 +110,7 @@ t_stack     *get_validated_stack(int argc, char *argv[])
 	create_validated_stack(a, args, &is_valid);
 	if (!is_valid || has_duplicates(a))
 	{
+		free_stack_str(args);
 		free_stack(a);
 		return (NULL);
 	}
