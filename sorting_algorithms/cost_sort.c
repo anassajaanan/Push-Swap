@@ -59,21 +59,25 @@ void	move_min_to_top(t_stack *a)
 
 int	find_best_target_in_stack_a(t_stack *a, int src_value_b)
 {
-	t_stack				s;
+	t_stack				*s;
+	int                 target;
 	struct s_stack_node	*temp;
 
-	init_stack(&s);
+	s = (t_stack *)malloc(sizeof(t_stack));
+	init_stack(s);
 	temp = a->top;
 	while (temp)
 	{
 		if (temp->val > src_value_b)
-			push(&s, temp->val);
+			push(s, temp->val);
 		temp = temp->next;
 	}
-	if (s.length == 0)
-		return (get_min(*a));
+	if (s->length == 0)
+		target = get_min(*a);
 	else
-		return (get_min(s));
+		target = get_min(*s);
+	free_stack(s);
+	return (target);
 }
 
 struct s_min_cost	*find_min_cost_b(t_stack *a, t_stack *b)
