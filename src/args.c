@@ -56,7 +56,7 @@ t_stack_str *parse_arguments(int argc, char *argv[])
 	{
 		args = ft_split(argv[i], ' ');
 		if (args[0] == NULL)
-			push_str(s, "space");
+			push_str(s, ft_strdup("space"));
 		j = 0;
 		while (args[j])
 		{
