@@ -12,42 +12,6 @@
 
 #include "../include/push_swap.h"
 
-int	is_numeric(const char *str)
-{
-	if (*str && (*str == '-' || *str == '+'))
-		str++;
-	while (*str && *str >= '0' && *str <= '9')
-		str++;
-	if (*str == '\0')
-		return (1);
-	return (0);
-}
-
-long int	ft_atoi(const char *str)
-{
-	int			i;
-	int			sign;
-	long int	num;
-
-	i = 0;
-	sign = 1;
-	num = 0;
-	while (str[i] && ((str[i] >= 9 && str[i] <= 13) || str[i] == 32))
-		i++;
-	if (str[i] && (str[i] == '+' || str[i] == '-'))
-	{
-		if (str[i] == '-')
-			sign = -1;
-		i++;
-	}
-	while (str[i] && (str[i] >= '0' && str[i] <= '9'))
-	{
-		num = (num * 10) + (str[i] - '0');
-		i++;
-	}
-	return (num * sign);
-}
-
 int	has_duplicates(t_stack *s)
 {
 	int					i;
@@ -88,23 +52,18 @@ void	handle_arguments(int argc, char *argv[], int *size, char ***args)
 			i++;
 		*size = i;
 	}
-	else
+	else if (argc > 2)
 	{
 		*size = argc - 1;
 		*args = argv + 1;
 	}
 }
 
-t_stack	*get_validated_stack(int size, char **args)
+void    create_validated_stack(int size, char **args, t_stack *a, int *is_valid)
 {
-	int			i;
-	t_stack		*a;
-	long int	num;
+	int i;
+	long int    num;
 
-	a = (t_stack *)malloc(sizeof(t_stack));
-	init_stack(a);
-	if (size == 0)
-		return (a);
 	i = size - 1;
 	while (i >= 0)
 	{
@@ -112,15 +71,37 @@ t_stack	*get_validated_stack(int size, char **args)
 		{
 			num = ft_atoi(args[i]);
 			if (num > INT_MAX || num < INT_MIN)
-				return (NULL);
+			{
+				*is_valid = 0;
+				break ;
+			}
 			else
 				push(a, (int)num);
 		}
 		else
-			return (NULL);
+		{
+			*is_valid = 0;
+			break ;
+		}
 		i--;
 	}
-	if (has_duplicates(a))
+}
+
+t_stack *get_validated_stack(int size, char **args)
+{
+	t_stack *a;
+	int is_valid;
+
+	is_valid = 1;
+	a = (t_stack *)malloc(sizeof(t_stack));
+	init_stack(a);
+	if (size == 0)
+		return (a);
+	create_validated_stack(size, args, a, &is_valid);
+	if (!is_valid || has_duplicates(a))
+	{
+		free_stack(a);
 		return (NULL);
+	}
 	return (a);
 }

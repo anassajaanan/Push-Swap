@@ -3,6 +3,18 @@
 /*                                                        :::      ::::::::   */
 /*   stack_operations_a.c                               :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
+/*   By: aajaanan <aajaanan@student.42abudhabi.ae>  +#+  +:+       +#+        */
+/*                                                +#+#+#+#+#+   +#+           */
+/*   Created: 2023/06/27 14:23:53 by aajaanan          #+#    #+#             */
+/*   Updated: 2023/07/17 19:06:55 by aajaanan         ###   ########.fr       */
+/*                                                                            */
+/* ************************************************************************** */
+
+/* ************************************************************************** */
+/*                                                                            */
+/*                                                        :::      ::::::::   */
+/*   stack_operations_a.c                               :+:      :+:    :+:   */
+/*                                                    +:+ +:+         +:+     */
 /*   By: aajaanan <aajaanan@student.42abudhabi.a    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/06/27 14:23:53 by aajaanan          #+#    #+#             */
@@ -12,7 +24,7 @@
 
 #include "../include/push_swap.h"
 
-void	ft_sa(t_stack *s)
+void	ft_sa(t_stack *s, int print_flag)
 {
 	int	temp;
 
@@ -22,17 +34,19 @@ void	ft_sa(t_stack *s)
 		s->top->val = s->top->next->val;
 		s->top->next->val = temp;
 	}
-	printf("sa\n");
+	if (print_flag)
+		printf("sa\n");
 }
 
-void	ft_pa(t_stack *a, t_stack *b)
+void	ft_pa(t_stack *a, t_stack *b, int print_flag)
 {
 	if (b->top)
 		push(a, pop(b));
-	printf("pa\n");
+	if (print_flag)
+		printf("pa\n");
 }
 
-void	ft_ra(t_stack *a)
+void	ft_ra(t_stack *a, int print_flag)
 {
 	struct s_stack_node	*temp;
 
@@ -46,10 +60,11 @@ void	ft_ra(t_stack *a)
 		a->last->next = NULL;
 		a->top->prev = NULL;
 	}
-	printf("ra\n");
+	if (print_flag)
+		printf("ra\n");
 }
 
-void	ft_rra(t_stack *a)
+void	ft_rra(t_stack *a, int print_flag)
 {
 	struct s_stack_node	*temp;
 
@@ -63,5 +78,6 @@ void	ft_rra(t_stack *a)
 		a->last->next = NULL;
 		a->top->prev = NULL;
 	}
-	printf("rra\n");
+	if (print_flag)
+		printf("rra\n");
 }

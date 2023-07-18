@@ -58,23 +58,23 @@ void    free_stack(t_stack *s);
 
 
 // stack_operations_a.c
-void    ft_sa(t_stack *s);
-void    ft_pa(t_stack *a, t_stack *b);
-void    ft_ra(t_stack *a);
-void    ft_rra(t_stack *a);
+void	ft_sa(t_stack *s, int print_flag);
+void	ft_pa(t_stack *a, t_stack *b, int print_flag);
+void	ft_ra(t_stack *a, int print_flag);
+void	ft_rra(t_stack *a, int print_flag);
 
 // stack_operations_b.c
-void    ft_sb(t_stack *s);
-void    ft_pb(t_stack *a, t_stack *b);
-void    ft_rb(t_stack *b);
-void    ft_rrb(t_stack *b);
+void	ft_sb(t_stack *s, int print_flag);
+void	ft_pb(t_stack *a, t_stack *b, int print_flag);
+void	ft_rb(t_stack *b, int print_flag);
+void	ft_rrb(t_stack *b, int print_flag);
 
 // args.c
-int	        is_numeric(const char *str);
-long int	ft_atoi(const char *str);
 int	        has_duplicates(t_stack *s);
 void        handle_arguments(int argc, char *argv[], int *size, char ***args);
-t_stack	    *get_validated_stack(int size, char **args);
+void        create_validated_stack(int size, char **args, t_stack *a, int *is_valid);
+t_stack     *get_validated_stack(int size, char **args);
+
 
 //  utils.c
 void	display_stack(t_stack *a);
@@ -83,8 +83,10 @@ int     get_max(t_stack s);
 int	    is_stack_sorted(t_stack *s);
 void	free_args(char **args);
 
-// ft_split.c
+// lib
 char	    **ft_split(const char *str, char sep);
+long int	ft_atoi(const char *str);
+int	        is_numeric(const char *str);
 
 // Small Sort
 void    sort_small(t_stack *a);

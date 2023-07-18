@@ -21,7 +21,7 @@ void	rotate_stack_a(t_stack *a, int cost)
 	{
 		while (i < cost)
 		{
-			ft_ra(a);
+			ft_ra(a, 1);
 			i++;
 		}
 	}
@@ -29,7 +29,7 @@ void	rotate_stack_a(t_stack *a, int cost)
 	{
 		while (i < abs(cost))
 		{
-			ft_rra(a);
+			ft_rra(a, 1);
 			i++;
 		}
 	}
@@ -44,7 +44,7 @@ void	rotate_stack_b(t_stack *b, int cost)
 	{
 		while (i < cost)
 		{
-			ft_rb(b);
+			ft_rb(b, 1);
 			i++;
 		}
 	}
@@ -52,7 +52,7 @@ void	rotate_stack_b(t_stack *b, int cost)
 	{
 		while (i < abs(cost))
 		{
-			ft_rrb(b);
+			ft_rrb(b, 1);
 			i++;
 		}
 	}

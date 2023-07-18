@@ -223,6 +223,104 @@ CMakeFiles/push.dir/sorting_algorithms/cost_sort_utils.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/push.dir/sorting_algorithms/cost_sort_utils.c.s"
 	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/aajaanan/Desktop/push/sorting_algorithms/cost_sort_utils.c -o CMakeFiles/push.dir/sorting_algorithms/cost_sort_utils.c.s
 
+CMakeFiles/push.dir/src/checker.c.o: CMakeFiles/push.dir/flags.make
+CMakeFiles/push.dir/src/checker.c.o: /Users/aajaanan/Desktop/push/src/checker.c
+CMakeFiles/push.dir/src/checker.c.o: CMakeFiles/push.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/aajaanan/Desktop/push/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_12) "Building C object CMakeFiles/push.dir/src/checker.c.o"
+	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/push.dir/src/checker.c.o -MF CMakeFiles/push.dir/src/checker.c.o.d -o CMakeFiles/push.dir/src/checker.c.o -c /Users/aajaanan/Desktop/push/src/checker.c
+
+CMakeFiles/push.dir/src/checker.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/push.dir/src/checker.c.i"
+	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Users/aajaanan/Desktop/push/src/checker.c > CMakeFiles/push.dir/src/checker.c.i
+
+CMakeFiles/push.dir/src/checker.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/push.dir/src/checker.c.s"
+	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/aajaanan/Desktop/push/src/checker.c -o CMakeFiles/push.dir/src/checker.c.s
+
+CMakeFiles/push.dir/get_next_line/get_next_line.c.o: CMakeFiles/push.dir/flags.make
+CMakeFiles/push.dir/get_next_line/get_next_line.c.o: /Users/aajaanan/Desktop/push/get_next_line/get_next_line.c
+CMakeFiles/push.dir/get_next_line/get_next_line.c.o: CMakeFiles/push.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/aajaanan/Desktop/push/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_13) "Building C object CMakeFiles/push.dir/get_next_line/get_next_line.c.o"
+	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/push.dir/get_next_line/get_next_line.c.o -MF CMakeFiles/push.dir/get_next_line/get_next_line.c.o.d -o CMakeFiles/push.dir/get_next_line/get_next_line.c.o -c /Users/aajaanan/Desktop/push/get_next_line/get_next_line.c
+
+CMakeFiles/push.dir/get_next_line/get_next_line.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/push.dir/get_next_line/get_next_line.c.i"
+	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Users/aajaanan/Desktop/push/get_next_line/get_next_line.c > CMakeFiles/push.dir/get_next_line/get_next_line.c.i
+
+CMakeFiles/push.dir/get_next_line/get_next_line.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/push.dir/get_next_line/get_next_line.c.s"
+	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/aajaanan/Desktop/push/get_next_line/get_next_line.c -o CMakeFiles/push.dir/get_next_line/get_next_line.c.s
+
+CMakeFiles/push.dir/get_next_line/get_next_line_utils.c.o: CMakeFiles/push.dir/flags.make
+CMakeFiles/push.dir/get_next_line/get_next_line_utils.c.o: /Users/aajaanan/Desktop/push/get_next_line/get_next_line_utils.c
+CMakeFiles/push.dir/get_next_line/get_next_line_utils.c.o: CMakeFiles/push.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/aajaanan/Desktop/push/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_14) "Building C object CMakeFiles/push.dir/get_next_line/get_next_line_utils.c.o"
+	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/push.dir/get_next_line/get_next_line_utils.c.o -MF CMakeFiles/push.dir/get_next_line/get_next_line_utils.c.o.d -o CMakeFiles/push.dir/get_next_line/get_next_line_utils.c.o -c /Users/aajaanan/Desktop/push/get_next_line/get_next_line_utils.c
+
+CMakeFiles/push.dir/get_next_line/get_next_line_utils.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/push.dir/get_next_line/get_next_line_utils.c.i"
+	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Users/aajaanan/Desktop/push/get_next_line/get_next_line_utils.c > CMakeFiles/push.dir/get_next_line/get_next_line_utils.c.i
+
+CMakeFiles/push.dir/get_next_line/get_next_line_utils.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/push.dir/get_next_line/get_next_line_utils.c.s"
+	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/aajaanan/Desktop/push/get_next_line/get_next_line_utils.c -o CMakeFiles/push.dir/get_next_line/get_next_line_utils.c.s
+
+CMakeFiles/push.dir/src/checker_utils.c.o: CMakeFiles/push.dir/flags.make
+CMakeFiles/push.dir/src/checker_utils.c.o: /Users/aajaanan/Desktop/push/src/checker_utils.c
+CMakeFiles/push.dir/src/checker_utils.c.o: CMakeFiles/push.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/aajaanan/Desktop/push/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_15) "Building C object CMakeFiles/push.dir/src/checker_utils.c.o"
+	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/push.dir/src/checker_utils.c.o -MF CMakeFiles/push.dir/src/checker_utils.c.o.d -o CMakeFiles/push.dir/src/checker_utils.c.o -c /Users/aajaanan/Desktop/push/src/checker_utils.c
+
+CMakeFiles/push.dir/src/checker_utils.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/push.dir/src/checker_utils.c.i"
+	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Users/aajaanan/Desktop/push/src/checker_utils.c > CMakeFiles/push.dir/src/checker_utils.c.i
+
+CMakeFiles/push.dir/src/checker_utils.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/push.dir/src/checker_utils.c.s"
+	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/aajaanan/Desktop/push/src/checker_utils.c -o CMakeFiles/push.dir/src/checker_utils.c.s
+
+CMakeFiles/push.dir/lib/ft_strcmp.c.o: CMakeFiles/push.dir/flags.make
+CMakeFiles/push.dir/lib/ft_strcmp.c.o: /Users/aajaanan/Desktop/push/lib/ft_strcmp.c
+CMakeFiles/push.dir/lib/ft_strcmp.c.o: CMakeFiles/push.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/aajaanan/Desktop/push/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_16) "Building C object CMakeFiles/push.dir/lib/ft_strcmp.c.o"
+	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/push.dir/lib/ft_strcmp.c.o -MF CMakeFiles/push.dir/lib/ft_strcmp.c.o.d -o CMakeFiles/push.dir/lib/ft_strcmp.c.o -c /Users/aajaanan/Desktop/push/lib/ft_strcmp.c
+
+CMakeFiles/push.dir/lib/ft_strcmp.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/push.dir/lib/ft_strcmp.c.i"
+	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Users/aajaanan/Desktop/push/lib/ft_strcmp.c > CMakeFiles/push.dir/lib/ft_strcmp.c.i
+
+CMakeFiles/push.dir/lib/ft_strcmp.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/push.dir/lib/ft_strcmp.c.s"
+	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/aajaanan/Desktop/push/lib/ft_strcmp.c -o CMakeFiles/push.dir/lib/ft_strcmp.c.s
+
+CMakeFiles/push.dir/lib/ft_atoi.c.o: CMakeFiles/push.dir/flags.make
+CMakeFiles/push.dir/lib/ft_atoi.c.o: /Users/aajaanan/Desktop/push/lib/ft_atoi.c
+CMakeFiles/push.dir/lib/ft_atoi.c.o: CMakeFiles/push.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/aajaanan/Desktop/push/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_17) "Building C object CMakeFiles/push.dir/lib/ft_atoi.c.o"
+	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/push.dir/lib/ft_atoi.c.o -MF CMakeFiles/push.dir/lib/ft_atoi.c.o.d -o CMakeFiles/push.dir/lib/ft_atoi.c.o -c /Users/aajaanan/Desktop/push/lib/ft_atoi.c
+
+CMakeFiles/push.dir/lib/ft_atoi.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/push.dir/lib/ft_atoi.c.i"
+	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Users/aajaanan/Desktop/push/lib/ft_atoi.c > CMakeFiles/push.dir/lib/ft_atoi.c.i
+
+CMakeFiles/push.dir/lib/ft_atoi.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/push.dir/lib/ft_atoi.c.s"
+	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/aajaanan/Desktop/push/lib/ft_atoi.c -o CMakeFiles/push.dir/lib/ft_atoi.c.s
+
+CMakeFiles/push.dir/lib/is_numeric.c.o: CMakeFiles/push.dir/flags.make
+CMakeFiles/push.dir/lib/is_numeric.c.o: /Users/aajaanan/Desktop/push/lib/is_numeric.c
+CMakeFiles/push.dir/lib/is_numeric.c.o: CMakeFiles/push.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/aajaanan/Desktop/push/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_18) "Building C object CMakeFiles/push.dir/lib/is_numeric.c.o"
+	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/push.dir/lib/is_numeric.c.o -MF CMakeFiles/push.dir/lib/is_numeric.c.o.d -o CMakeFiles/push.dir/lib/is_numeric.c.o -c /Users/aajaanan/Desktop/push/lib/is_numeric.c
+
+CMakeFiles/push.dir/lib/is_numeric.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/push.dir/lib/is_numeric.c.i"
+	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Users/aajaanan/Desktop/push/lib/is_numeric.c > CMakeFiles/push.dir/lib/is_numeric.c.i
+
+CMakeFiles/push.dir/lib/is_numeric.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/push.dir/lib/is_numeric.c.s"
+	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/aajaanan/Desktop/push/lib/is_numeric.c -o CMakeFiles/push.dir/lib/is_numeric.c.s
+
 # Object files for target push
 push_OBJECTS = \
 "CMakeFiles/push.dir/lib/ft_split.c.o" \
@@ -235,7 +333,14 @@ push_OBJECTS = \
 "CMakeFiles/push.dir/sorting_algorithms/cost_sort.c.o" \
 "CMakeFiles/push.dir/src/push_swap.c.o" \
 "CMakeFiles/push.dir/sorting_algorithms/small_sort.c.o" \
-"CMakeFiles/push.dir/sorting_algorithms/cost_sort_utils.c.o"
+"CMakeFiles/push.dir/sorting_algorithms/cost_sort_utils.c.o" \
+"CMakeFiles/push.dir/src/checker.c.o" \
+"CMakeFiles/push.dir/get_next_line/get_next_line.c.o" \
+"CMakeFiles/push.dir/get_next_line/get_next_line_utils.c.o" \
+"CMakeFiles/push.dir/src/checker_utils.c.o" \
+"CMakeFiles/push.dir/lib/ft_strcmp.c.o" \
+"CMakeFiles/push.dir/lib/ft_atoi.c.o" \
+"CMakeFiles/push.dir/lib/is_numeric.c.o"
 
 # External object files for target push
 push_EXTERNAL_OBJECTS =
@@ -251,9 +356,16 @@ push: CMakeFiles/push.dir/sorting_algorithms/cost_sort.c.o
 push: CMakeFiles/push.dir/src/push_swap.c.o
 push: CMakeFiles/push.dir/sorting_algorithms/small_sort.c.o
 push: CMakeFiles/push.dir/sorting_algorithms/cost_sort_utils.c.o
+push: CMakeFiles/push.dir/src/checker.c.o
+push: CMakeFiles/push.dir/get_next_line/get_next_line.c.o
+push: CMakeFiles/push.dir/get_next_line/get_next_line_utils.c.o
+push: CMakeFiles/push.dir/src/checker_utils.c.o
+push: CMakeFiles/push.dir/lib/ft_strcmp.c.o
+push: CMakeFiles/push.dir/lib/ft_atoi.c.o
+push: CMakeFiles/push.dir/lib/is_numeric.c.o
 push: CMakeFiles/push.dir/build.make
 push: CMakeFiles/push.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/Users/aajaanan/Desktop/push/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_12) "Linking C executable push"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/Users/aajaanan/Desktop/push/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_19) "Linking C executable push"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/push.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.

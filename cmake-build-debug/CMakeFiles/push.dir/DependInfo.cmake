@@ -8,12 +8,19 @@ set(CMAKE_DEPENDS_LANGUAGES
 
 # The set of dependency files which are needed:
 set(CMAKE_DEPENDS_DEPENDENCY_FILES
+  "/Users/aajaanan/Desktop/push/get_next_line/get_next_line.c" "CMakeFiles/push.dir/get_next_line/get_next_line.c.o" "gcc" "CMakeFiles/push.dir/get_next_line/get_next_line.c.o.d"
+  "/Users/aajaanan/Desktop/push/get_next_line/get_next_line_utils.c" "CMakeFiles/push.dir/get_next_line/get_next_line_utils.c.o" "gcc" "CMakeFiles/push.dir/get_next_line/get_next_line_utils.c.o.d"
+  "/Users/aajaanan/Desktop/push/lib/ft_atoi.c" "CMakeFiles/push.dir/lib/ft_atoi.c.o" "gcc" "CMakeFiles/push.dir/lib/ft_atoi.c.o.d"
   "/Users/aajaanan/Desktop/push/lib/ft_split.c" "CMakeFiles/push.dir/lib/ft_split.c.o" "gcc" "CMakeFiles/push.dir/lib/ft_split.c.o.d"
+  "/Users/aajaanan/Desktop/push/lib/ft_strcmp.c" "CMakeFiles/push.dir/lib/ft_strcmp.c.o" "gcc" "CMakeFiles/push.dir/lib/ft_strcmp.c.o.d"
+  "/Users/aajaanan/Desktop/push/lib/is_numeric.c" "CMakeFiles/push.dir/lib/is_numeric.c.o" "gcc" "CMakeFiles/push.dir/lib/is_numeric.c.o.d"
   "/Users/aajaanan/Desktop/push/sorting_algorithms/cost_sort.c" "CMakeFiles/push.dir/sorting_algorithms/cost_sort.c.o" "gcc" "CMakeFiles/push.dir/sorting_algorithms/cost_sort.c.o.d"
   "/Users/aajaanan/Desktop/push/sorting_algorithms/cost_sort_utils.c" "CMakeFiles/push.dir/sorting_algorithms/cost_sort_utils.c.o" "gcc" "CMakeFiles/push.dir/sorting_algorithms/cost_sort_utils.c.o.d"
   "/Users/aajaanan/Desktop/push/sorting_algorithms/quick_sort.c" "CMakeFiles/push.dir/sorting_algorithms/quick_sort.c.o" "gcc" "CMakeFiles/push.dir/sorting_algorithms/quick_sort.c.o.d"
   "/Users/aajaanan/Desktop/push/sorting_algorithms/small_sort.c" "CMakeFiles/push.dir/sorting_algorithms/small_sort.c.o" "gcc" "CMakeFiles/push.dir/sorting_algorithms/small_sort.c.o.d"
   "/Users/aajaanan/Desktop/push/src/args.c" "CMakeFiles/push.dir/src/args.c.o" "gcc" "CMakeFiles/push.dir/src/args.c.o.d"
+  "/Users/aajaanan/Desktop/push/src/checker.c" "CMakeFiles/push.dir/src/checker.c.o" "gcc" "CMakeFiles/push.dir/src/checker.c.o.d"
+  "/Users/aajaanan/Desktop/push/src/checker_utils.c" "CMakeFiles/push.dir/src/checker_utils.c.o" "gcc" "CMakeFiles/push.dir/src/checker_utils.c.o.d"
   "/Users/aajaanan/Desktop/push/src/push_swap.c" "CMakeFiles/push.dir/src/push_swap.c.o" "gcc" "CMakeFiles/push.dir/src/push_swap.c.o.d"
   "/Users/aajaanan/Desktop/push/src/push_swap_utils.c" "CMakeFiles/push.dir/src/push_swap_utils.c.o" "gcc" "CMakeFiles/push.dir/src/push_swap_utils.c.o.d"
   "/Users/aajaanan/Desktop/push/src/stack.c" "CMakeFiles/push.dir/src/stack.c.o" "gcc" "CMakeFiles/push.dir/src/stack.c.o.d"

@@ -38,14 +38,14 @@ int	main(int argc, char *argv[])
 	a = get_validated_stack(size, args);
 	if (a == NULL)
 		printf("Error\n");
-	else
+	else if (a->length > 0)
 	{
 		b = (t_stack *)malloc(sizeof(t_stack));
 		init_stack(b);
 		quick_cost_sort(a, b);
-		free(b);
-		free_stack(a);
+		free_stack(b);
 	}
-	if (argc == 2 && args)
+	if (argc == 2)
 		free_args(args);
+	free_stack(a);
 }

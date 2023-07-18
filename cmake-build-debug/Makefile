@@ -129,6 +129,78 @@ push/fast:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/push.dir/build.make CMakeFiles/push.dir/build
 .PHONY : push/fast
 
+get_next_line/get_next_line.o: get_next_line/get_next_line.c.o
+.PHONY : get_next_line/get_next_line.o
+
+# target to build an object file
+get_next_line/get_next_line.c.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/push.dir/build.make CMakeFiles/push.dir/get_next_line/get_next_line.c.o
+.PHONY : get_next_line/get_next_line.c.o
+
+get_next_line/get_next_line.i: get_next_line/get_next_line.c.i
+.PHONY : get_next_line/get_next_line.i
+
+# target to preprocess a source file
+get_next_line/get_next_line.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/push.dir/build.make CMakeFiles/push.dir/get_next_line/get_next_line.c.i
+.PHONY : get_next_line/get_next_line.c.i
+
+get_next_line/get_next_line.s: get_next_line/get_next_line.c.s
+.PHONY : get_next_line/get_next_line.s
+
+# target to generate assembly for a file
+get_next_line/get_next_line.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/push.dir/build.make CMakeFiles/push.dir/get_next_line/get_next_line.c.s
+.PHONY : get_next_line/get_next_line.c.s
+
+get_next_line/get_next_line_utils.o: get_next_line/get_next_line_utils.c.o
+.PHONY : get_next_line/get_next_line_utils.o
+
+# target to build an object file
+get_next_line/get_next_line_utils.c.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/push.dir/build.make CMakeFiles/push.dir/get_next_line/get_next_line_utils.c.o
+.PHONY : get_next_line/get_next_line_utils.c.o
+
+get_next_line/get_next_line_utils.i: get_next_line/get_next_line_utils.c.i
+.PHONY : get_next_line/get_next_line_utils.i
+
+# target to preprocess a source file
+get_next_line/get_next_line_utils.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/push.dir/build.make CMakeFiles/push.dir/get_next_line/get_next_line_utils.c.i
+.PHONY : get_next_line/get_next_line_utils.c.i
+
+get_next_line/get_next_line_utils.s: get_next_line/get_next_line_utils.c.s
+.PHONY : get_next_line/get_next_line_utils.s
+
+# target to generate assembly for a file
+get_next_line/get_next_line_utils.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/push.dir/build.make CMakeFiles/push.dir/get_next_line/get_next_line_utils.c.s
+.PHONY : get_next_line/get_next_line_utils.c.s
+
+lib/ft_atoi.o: lib/ft_atoi.c.o
+.PHONY : lib/ft_atoi.o
+
+# target to build an object file
+lib/ft_atoi.c.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/push.dir/build.make CMakeFiles/push.dir/lib/ft_atoi.c.o
+.PHONY : lib/ft_atoi.c.o
+
+lib/ft_atoi.i: lib/ft_atoi.c.i
+.PHONY : lib/ft_atoi.i
+
+# target to preprocess a source file
+lib/ft_atoi.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/push.dir/build.make CMakeFiles/push.dir/lib/ft_atoi.c.i
+.PHONY : lib/ft_atoi.c.i
+
+lib/ft_atoi.s: lib/ft_atoi.c.s
+.PHONY : lib/ft_atoi.s
+
+# target to generate assembly for a file
+lib/ft_atoi.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/push.dir/build.make CMakeFiles/push.dir/lib/ft_atoi.c.s
+.PHONY : lib/ft_atoi.c.s
+
 lib/ft_split.o: lib/ft_split.c.o
 .PHONY : lib/ft_split.o
 
@@ -152,6 +224,54 @@ lib/ft_split.s: lib/ft_split.c.s
 lib/ft_split.c.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/push.dir/build.make CMakeFiles/push.dir/lib/ft_split.c.s
 .PHONY : lib/ft_split.c.s
+
+lib/ft_strcmp.o: lib/ft_strcmp.c.o
+.PHONY : lib/ft_strcmp.o
+
+# target to build an object file
+lib/ft_strcmp.c.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/push.dir/build.make CMakeFiles/push.dir/lib/ft_strcmp.c.o
+.PHONY : lib/ft_strcmp.c.o
+
+lib/ft_strcmp.i: lib/ft_strcmp.c.i
+.PHONY : lib/ft_strcmp.i
+
+# target to preprocess a source file
+lib/ft_strcmp.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/push.dir/build.make CMakeFiles/push.dir/lib/ft_strcmp.c.i
+.PHONY : lib/ft_strcmp.c.i
+
+lib/ft_strcmp.s: lib/ft_strcmp.c.s
+.PHONY : lib/ft_strcmp.s
+
+# target to generate assembly for a file
+lib/ft_strcmp.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/push.dir/build.make CMakeFiles/push.dir/lib/ft_strcmp.c.s
+.PHONY : lib/ft_strcmp.c.s
+
+lib/is_numeric.o: lib/is_numeric.c.o
+.PHONY : lib/is_numeric.o
+
+# target to build an object file
+lib/is_numeric.c.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/push.dir/build.make CMakeFiles/push.dir/lib/is_numeric.c.o
+.PHONY : lib/is_numeric.c.o
+
+lib/is_numeric.i: lib/is_numeric.c.i
+.PHONY : lib/is_numeric.i
+
+# target to preprocess a source file
+lib/is_numeric.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/push.dir/build.make CMakeFiles/push.dir/lib/is_numeric.c.i
+.PHONY : lib/is_numeric.c.i
+
+lib/is_numeric.s: lib/is_numeric.c.s
+.PHONY : lib/is_numeric.s
+
+# target to generate assembly for a file
+lib/is_numeric.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/push.dir/build.make CMakeFiles/push.dir/lib/is_numeric.c.s
+.PHONY : lib/is_numeric.c.s
 
 sorting_algorithms/cost_sort.o: sorting_algorithms/cost_sort.c.o
 .PHONY : sorting_algorithms/cost_sort.o
@@ -272,6 +392,54 @@ src/args.s: src/args.c.s
 src/args.c.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/push.dir/build.make CMakeFiles/push.dir/src/args.c.s
 .PHONY : src/args.c.s
+
+src/checker.o: src/checker.c.o
+.PHONY : src/checker.o
+
+# target to build an object file
+src/checker.c.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/push.dir/build.make CMakeFiles/push.dir/src/checker.c.o
+.PHONY : src/checker.c.o
+
+src/checker.i: src/checker.c.i
+.PHONY : src/checker.i
+
+# target to preprocess a source file
+src/checker.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/push.dir/build.make CMakeFiles/push.dir/src/checker.c.i
+.PHONY : src/checker.c.i
+
+src/checker.s: src/checker.c.s
+.PHONY : src/checker.s
+
+# target to generate assembly for a file
+src/checker.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/push.dir/build.make CMakeFiles/push.dir/src/checker.c.s
+.PHONY : src/checker.c.s
+
+src/checker_utils.o: src/checker_utils.c.o
+.PHONY : src/checker_utils.o
+
+# target to build an object file
+src/checker_utils.c.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/push.dir/build.make CMakeFiles/push.dir/src/checker_utils.c.o
+.PHONY : src/checker_utils.c.o
+
+src/checker_utils.i: src/checker_utils.c.i
+.PHONY : src/checker_utils.i
+
+# target to preprocess a source file
+src/checker_utils.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/push.dir/build.make CMakeFiles/push.dir/src/checker_utils.c.i
+.PHONY : src/checker_utils.c.i
+
+src/checker_utils.s: src/checker_utils.c.s
+.PHONY : src/checker_utils.s
+
+# target to generate assembly for a file
+src/checker_utils.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/push.dir/build.make CMakeFiles/push.dir/src/checker_utils.c.s
+.PHONY : src/checker_utils.c.s
 
 src/push_swap.o: src/push_swap.c.o
 .PHONY : src/push_swap.o
@@ -402,9 +570,24 @@ help:
 	@echo "... edit_cache"
 	@echo "... rebuild_cache"
 	@echo "... push"
+	@echo "... get_next_line/get_next_line.o"
+	@echo "... get_next_line/get_next_line.i"
+	@echo "... get_next_line/get_next_line.s"
+	@echo "... get_next_line/get_next_line_utils.o"
+	@echo "... get_next_line/get_next_line_utils.i"
+	@echo "... get_next_line/get_next_line_utils.s"
+	@echo "... lib/ft_atoi.o"
+	@echo "... lib/ft_atoi.i"
+	@echo "... lib/ft_atoi.s"
 	@echo "... lib/ft_split.o"
 	@echo "... lib/ft_split.i"
 	@echo "... lib/ft_split.s"
+	@echo "... lib/ft_strcmp.o"
+	@echo "... lib/ft_strcmp.i"
+	@echo "... lib/ft_strcmp.s"
+	@echo "... lib/is_numeric.o"
+	@echo "... lib/is_numeric.i"
+	@echo "... lib/is_numeric.s"
 	@echo "... sorting_algorithms/cost_sort.o"
 	@echo "... sorting_algorithms/cost_sort.i"
 	@echo "... sorting_algorithms/cost_sort.s"
@@ -420,6 +603,12 @@ help:
 	@echo "... src/args.o"
 	@echo "... src/args.i"
 	@echo "... src/args.s"
+	@echo "... src/checker.o"
+	@echo "... src/checker.i"
+	@echo "... src/checker.s"
+	@echo "... src/checker_utils.o"
+	@echo "... src/checker_utils.i"
+	@echo "... src/checker_utils.s"
 	@echo "... src/push_swap.o"
 	@echo "... src/push_swap.i"
 	@echo "... src/push_swap.s"

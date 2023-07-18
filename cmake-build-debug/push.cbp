@@ -78,10 +78,28 @@
 				</MakeCommands>
 			</Target>
 		</Build>
+		<Unit filename="/Users/aajaanan/Desktop/push/get_next_line/get_next_line.c">
+			<Option target="push"/>
+		</Unit>
+		<Unit filename="/Users/aajaanan/Desktop/push/get_next_line/get_next_line_utils.c">
+			<Option target="push"/>
+		</Unit>
+		<Unit filename="/Users/aajaanan/Desktop/push/include/checker.h">
+			<Option target="push"/>
+		</Unit>
 		<Unit filename="/Users/aajaanan/Desktop/push/include/push_swap.h">
 			<Option target="push"/>
 		</Unit>
+		<Unit filename="/Users/aajaanan/Desktop/push/lib/ft_atoi.c">
+			<Option target="push"/>
+		</Unit>
 		<Unit filename="/Users/aajaanan/Desktop/push/lib/ft_split.c">
+			<Option target="push"/>
+		</Unit>
+		<Unit filename="/Users/aajaanan/Desktop/push/lib/ft_strcmp.c">
+			<Option target="push"/>
+		</Unit>
+		<Unit filename="/Users/aajaanan/Desktop/push/lib/is_numeric.c">
 			<Option target="push"/>
 		</Unit>
 		<Unit filename="/Users/aajaanan/Desktop/push/sorting_algorithms/cost_sort.c">
@@ -97,6 +115,12 @@
 			<Option target="push"/>
 		</Unit>
 		<Unit filename="/Users/aajaanan/Desktop/push/src/args.c">
+			<Option target="push"/>
+		</Unit>
+		<Unit filename="/Users/aajaanan/Desktop/push/src/checker.c">
+			<Option target="push"/>
+		</Unit>
+		<Unit filename="/Users/aajaanan/Desktop/push/src/checker_utils.c">
 			<Option target="push"/>
 		</Unit>
 		<Unit filename="/Users/aajaanan/Desktop/push/src/push_swap.c">

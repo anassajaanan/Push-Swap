@@ -43,7 +43,7 @@ void	move_min_to_top(t_stack *a)
 	{
 		while (i < instructions)
 		{
-			ft_ra(a);
+			ft_ra(a, 1);
 			i++;
 		}
 	}
@@ -51,7 +51,7 @@ void	move_min_to_top(t_stack *a)
 	{
 		while (i < abs(instructions))
 		{
-			ft_rra(a);
+			ft_rra(a, 1);
 			i++;
 		}
 	}
@@ -113,7 +113,7 @@ void	cost_sort(t_stack *a, t_stack *b)
 		rotate_stack_a(a, min_cost_data->target_cost);
 		rotate_stack_b(b, min_cost_data->src_cost);
 		free(min_cost_data);
-		ft_pa(a, b);
+		ft_pa(a, b, 1);
 	}
 	move_min_to_top(a);
 }

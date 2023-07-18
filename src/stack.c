@@ -69,6 +69,8 @@ void    free_stack(t_stack *s)
 {
     struct s_stack_node *p;
 
+	if (s == NULL)
+		return ;
     while (s->top)
     {
         p = s->top;

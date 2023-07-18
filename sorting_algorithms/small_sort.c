@@ -21,16 +21,16 @@ void	sort_small(t_stack *a)
 	else if (a->length == 2)
 	{
 		if (a->top->val > a->top->next->val)
-			ft_sa(a);
+			ft_sa(a, 1);
 	}
 	else if (a->length == 3)
 	{
 		max = get_max(*a);
 		if (a->top->val == max)
-			ft_ra(a);
+			ft_ra(a, 1);
 		else if (a->top->next->val == max)
-			ft_rra(a);
+			ft_rra(a, 1);
 		if (a->top->val > a->top->next->val)
-			ft_sa(a);
+			ft_sa(a, 1);
 	}
 }

@@ -97,14 +97,14 @@ void	quick_sort(t_stack *a, t_stack *b)
 			while (i < len)
 			{
 				if (a->last->val < pivot)
-					ft_rra(a);
+					ft_rra(a, 1);
 				if (a->top->val < pivot)
 				{
-					ft_pb(a, b);
+					ft_pb(a, b, 1);
 					i++;
 				}
 				else
-					ft_ra(a);
+					ft_ra(a, 1);
 			}
 			quick_sort(a, b);
 		}
