@@ -11,6 +11,8 @@
 /* ************************************************************************** */
 
 #include "../include/push_swap.h"
+#include "../include/lib.h"
+#include "../include/string_stack.h"
 
 void	quick_cost_sort(t_stack *a, t_stack *b)
 {
@@ -30,22 +32,20 @@ int	main(int argc, char *argv[])
 {
 	t_stack	*a;
 	t_stack	*b;
-	int		size;
-	char	**args;
 
-	args = NULL;
-	handle_arguments(argc, argv, &size, &args);
-	a = get_validated_stack(size, args);
+	a = get_validated_stack(argc, argv);
 	if (a == NULL)
+	{
 		printf("Error\n");
-	else if (a->length > 0)
+		return (0);
+	}
+	else
 	{
 		b = (t_stack *)malloc(sizeof(t_stack));
 		init_stack(b);
 		quick_cost_sort(a, b);
+		free_stack(a);
 		free_stack(b);
+		return (0);
 	}
-	if (argc == 2)
-		free_args(args);
-	free_stack(a);
 }

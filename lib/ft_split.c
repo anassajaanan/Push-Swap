@@ -1,4 +1,4 @@
-#include "../include/push_swap.h"
+#include "../include/lib.h"
 
 static int	is_separator(char c, char sep)
 {

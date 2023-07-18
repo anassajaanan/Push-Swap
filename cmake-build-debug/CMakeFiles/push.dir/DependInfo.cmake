@@ -13,6 +13,9 @@ set(CMAKE_DEPENDS_DEPENDENCY_FILES
   "/Users/aajaanan/Desktop/push/lib/ft_atoi.c" "CMakeFiles/push.dir/lib/ft_atoi.c.o" "gcc" "CMakeFiles/push.dir/lib/ft_atoi.c.o.d"
   "/Users/aajaanan/Desktop/push/lib/ft_split.c" "CMakeFiles/push.dir/lib/ft_split.c.o" "gcc" "CMakeFiles/push.dir/lib/ft_split.c.o.d"
   "/Users/aajaanan/Desktop/push/lib/ft_strcmp.c" "CMakeFiles/push.dir/lib/ft_strcmp.c.o" "gcc" "CMakeFiles/push.dir/lib/ft_strcmp.c.o.d"
+  "/Users/aajaanan/Desktop/push/lib/ft_strdup.c" "CMakeFiles/push.dir/lib/ft_strdup.c.o" "gcc" "CMakeFiles/push.dir/lib/ft_strdup.c.o.d"
+  "/Users/aajaanan/Desktop/push/lib/ft_strlcpy.c" "CMakeFiles/push.dir/lib/ft_strlcpy.c.o" "gcc" "CMakeFiles/push.dir/lib/ft_strlcpy.c.o.d"
+  "/Users/aajaanan/Desktop/push/lib/ft_strlen.c" "CMakeFiles/push.dir/lib/ft_strlen.c.o" "gcc" "CMakeFiles/push.dir/lib/ft_strlen.c.o.d"
   "/Users/aajaanan/Desktop/push/lib/is_numeric.c" "CMakeFiles/push.dir/lib/is_numeric.c.o" "gcc" "CMakeFiles/push.dir/lib/is_numeric.c.o.d"
   "/Users/aajaanan/Desktop/push/sorting_algorithms/cost_sort.c" "CMakeFiles/push.dir/sorting_algorithms/cost_sort.c.o" "gcc" "CMakeFiles/push.dir/sorting_algorithms/cost_sort.c.o.d"
   "/Users/aajaanan/Desktop/push/sorting_algorithms/cost_sort_utils.c" "CMakeFiles/push.dir/sorting_algorithms/cost_sort_utils.c.o" "gcc" "CMakeFiles/push.dir/sorting_algorithms/cost_sort_utils.c.o.d"
@@ -26,6 +29,7 @@ set(CMAKE_DEPENDS_DEPENDENCY_FILES
   "/Users/aajaanan/Desktop/push/src/stack.c" "CMakeFiles/push.dir/src/stack.c.o" "gcc" "CMakeFiles/push.dir/src/stack.c.o.d"
   "/Users/aajaanan/Desktop/push/src/stack_operations_a.c" "CMakeFiles/push.dir/src/stack_operations_a.c.o" "gcc" "CMakeFiles/push.dir/src/stack_operations_a.c.o.d"
   "/Users/aajaanan/Desktop/push/src/stack_operations_b.c" "CMakeFiles/push.dir/src/stack_operations_b.c.o" "gcc" "CMakeFiles/push.dir/src/stack_operations_b.c.o.d"
+  "/Users/aajaanan/Desktop/push/src/string_stack.c" "CMakeFiles/push.dir/src/string_stack.c.o" "gcc" "CMakeFiles/push.dir/src/string_stack.c.o.d"
   )
 
 # Targets to which this target links.

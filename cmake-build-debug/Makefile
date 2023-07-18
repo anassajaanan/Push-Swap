@@ -249,6 +249,78 @@ lib/ft_strcmp.c.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/push.dir/build.make CMakeFiles/push.dir/lib/ft_strcmp.c.s
 .PHONY : lib/ft_strcmp.c.s
 
+lib/ft_strdup.o: lib/ft_strdup.c.o
+.PHONY : lib/ft_strdup.o
+
+# target to build an object file
+lib/ft_strdup.c.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/push.dir/build.make CMakeFiles/push.dir/lib/ft_strdup.c.o
+.PHONY : lib/ft_strdup.c.o
+
+lib/ft_strdup.i: lib/ft_strdup.c.i
+.PHONY : lib/ft_strdup.i
+
+# target to preprocess a source file
+lib/ft_strdup.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/push.dir/build.make CMakeFiles/push.dir/lib/ft_strdup.c.i
+.PHONY : lib/ft_strdup.c.i
+
+lib/ft_strdup.s: lib/ft_strdup.c.s
+.PHONY : lib/ft_strdup.s
+
+# target to generate assembly for a file
+lib/ft_strdup.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/push.dir/build.make CMakeFiles/push.dir/lib/ft_strdup.c.s
+.PHONY : lib/ft_strdup.c.s
+
+lib/ft_strlcpy.o: lib/ft_strlcpy.c.o
+.PHONY : lib/ft_strlcpy.o
+
+# target to build an object file
+lib/ft_strlcpy.c.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/push.dir/build.make CMakeFiles/push.dir/lib/ft_strlcpy.c.o
+.PHONY : lib/ft_strlcpy.c.o
+
+lib/ft_strlcpy.i: lib/ft_strlcpy.c.i
+.PHONY : lib/ft_strlcpy.i
+
+# target to preprocess a source file
+lib/ft_strlcpy.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/push.dir/build.make CMakeFiles/push.dir/lib/ft_strlcpy.c.i
+.PHONY : lib/ft_strlcpy.c.i
+
+lib/ft_strlcpy.s: lib/ft_strlcpy.c.s
+.PHONY : lib/ft_strlcpy.s
+
+# target to generate assembly for a file
+lib/ft_strlcpy.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/push.dir/build.make CMakeFiles/push.dir/lib/ft_strlcpy.c.s
+.PHONY : lib/ft_strlcpy.c.s
+
+lib/ft_strlen.o: lib/ft_strlen.c.o
+.PHONY : lib/ft_strlen.o
+
+# target to build an object file
+lib/ft_strlen.c.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/push.dir/build.make CMakeFiles/push.dir/lib/ft_strlen.c.o
+.PHONY : lib/ft_strlen.c.o
+
+lib/ft_strlen.i: lib/ft_strlen.c.i
+.PHONY : lib/ft_strlen.i
+
+# target to preprocess a source file
+lib/ft_strlen.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/push.dir/build.make CMakeFiles/push.dir/lib/ft_strlen.c.i
+.PHONY : lib/ft_strlen.c.i
+
+lib/ft_strlen.s: lib/ft_strlen.c.s
+.PHONY : lib/ft_strlen.s
+
+# target to generate assembly for a file
+lib/ft_strlen.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/push.dir/build.make CMakeFiles/push.dir/lib/ft_strlen.c.s
+.PHONY : lib/ft_strlen.c.s
+
 lib/is_numeric.o: lib/is_numeric.c.o
 .PHONY : lib/is_numeric.o
 
@@ -561,6 +633,30 @@ src/stack_operations_b.c.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/push.dir/build.make CMakeFiles/push.dir/src/stack_operations_b.c.s
 .PHONY : src/stack_operations_b.c.s
 
+src/string_stack.o: src/string_stack.c.o
+.PHONY : src/string_stack.o
+
+# target to build an object file
+src/string_stack.c.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/push.dir/build.make CMakeFiles/push.dir/src/string_stack.c.o
+.PHONY : src/string_stack.c.o
+
+src/string_stack.i: src/string_stack.c.i
+.PHONY : src/string_stack.i
+
+# target to preprocess a source file
+src/string_stack.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/push.dir/build.make CMakeFiles/push.dir/src/string_stack.c.i
+.PHONY : src/string_stack.c.i
+
+src/string_stack.s: src/string_stack.c.s
+.PHONY : src/string_stack.s
+
+# target to generate assembly for a file
+src/string_stack.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/push.dir/build.make CMakeFiles/push.dir/src/string_stack.c.s
+.PHONY : src/string_stack.c.s
+
 # Help Target
 help:
 	@echo "The following are some of the valid targets for this Makefile:"
@@ -585,6 +681,15 @@ help:
 	@echo "... lib/ft_strcmp.o"
 	@echo "... lib/ft_strcmp.i"
 	@echo "... lib/ft_strcmp.s"
+	@echo "... lib/ft_strdup.o"
+	@echo "... lib/ft_strdup.i"
+	@echo "... lib/ft_strdup.s"
+	@echo "... lib/ft_strlcpy.o"
+	@echo "... lib/ft_strlcpy.i"
+	@echo "... lib/ft_strlcpy.s"
+	@echo "... lib/ft_strlen.o"
+	@echo "... lib/ft_strlen.i"
+	@echo "... lib/ft_strlen.s"
 	@echo "... lib/is_numeric.o"
 	@echo "... lib/is_numeric.i"
 	@echo "... lib/is_numeric.s"
@@ -624,6 +729,9 @@ help:
 	@echo "... src/stack_operations_b.o"
 	@echo "... src/stack_operations_b.i"
 	@echo "... src/stack_operations_b.s"
+	@echo "... src/string_stack.o"
+	@echo "... src/string_stack.i"
+	@echo "... src/string_stack.s"
 .PHONY : help
 
 

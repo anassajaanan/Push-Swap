@@ -28,6 +28,7 @@
 # include <stdlib.h>
 # include <limits.h>
 # include <stdio.h>
+#include "../include/string_stack.h"
 
 struct s_stack_node
 {
@@ -71,9 +72,12 @@ void	ft_rrb(t_stack *b, int print_flag);
 
 // args.c
 int	        has_duplicates(t_stack *s);
-void        handle_arguments(int argc, char *argv[], int *size, char ***args);
-void        create_validated_stack(int size, char **args, t_stack *a, int *is_valid);
-t_stack     *get_validated_stack(int size, char **args);
+//void        handle_arguments(int argc, char *argv[], int *size, char ***args);
+//void        create_validated_stack(int size, char **args, t_stack *a, int *is_valid);
+//t_stack     *get_validated_stack(int size, char **args);
+t_stack_str *parse_arguments(int argc, char *argv[]);
+void    create_validated_stack(t_stack *a, t_stack_str *args, int *is_valid);
+t_stack     *get_validated_stack(int argc, char *argv[]);
 
 
 //  utils.c
@@ -83,10 +87,6 @@ int     get_max(t_stack s);
 int	    is_stack_sorted(t_stack *s);
 void	free_args(char **args);
 
-// lib
-char	    **ft_split(const char *str, char sep);
-long int	ft_atoi(const char *str);
-int	        is_numeric(const char *str);
 
 // Small Sort
 void    sort_small(t_stack *a);
@@ -108,7 +108,6 @@ void                cost_sort(t_stack *a, t_stack *b);
 // Cost Sort Utils
 void    rotate_stack_a(t_stack *a, int cost);
 void    rotate_stack_b(t_stack *b, int cost);
-
 
 
 

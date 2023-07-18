@@ -10,7 +10,7 @@
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "../include/push_swap.h"
+#include "../include/lib.h"
 
 long int	ft_atoi(const char *str)
 {

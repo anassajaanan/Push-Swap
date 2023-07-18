@@ -63,12 +63,6 @@ int     get_max(t_stack s);
 int	    is_stack_sorted(t_stack *s);
 
 
-// lib
-char	    **ft_split(const char *str, char sep);
-int	        ft_strcmp(const char *s1, const char *s2);
-long int	ft_atoi(const char *str);
-int	        is_numeric(const char *str);
-
 int is_valid_instruction(char *str);
 void    execute_instruction(t_stack *a, t_stack *b, char *str);
 void    execute_instruction2(t_stack *a, t_stack *b, char *str);

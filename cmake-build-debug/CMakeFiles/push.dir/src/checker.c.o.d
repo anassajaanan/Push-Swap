@@ -100,4 +100,5 @@ CMakeFiles/push.dir/src/checker.c.o: \
   /Library/Developer/CommandLineTools/SDKs/MacOSX11.1.sdk/usr/include/sys/_types/_va_list.h \
   /Library/Developer/CommandLineTools/SDKs/MacOSX11.1.sdk/usr/include/sys/stdio.h \
   /Library/Developer/CommandLineTools/SDKs/MacOSX11.1.sdk/usr/include/secure/_stdio.h \
-  /Library/Developer/CommandLineTools/SDKs/MacOSX11.1.sdk/usr/include/secure/_common.h
+  /Library/Developer/CommandLineTools/SDKs/MacOSX11.1.sdk/usr/include/secure/_common.h \
+  /Users/aajaanan/Desktop/push/src/../include/lib.h

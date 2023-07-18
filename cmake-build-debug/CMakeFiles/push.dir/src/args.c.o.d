@@ -78,4 +78,7 @@ CMakeFiles/push.dir/src/args.c.o: /Users/aajaanan/Desktop/push/src/args.c \
   /Library/Developer/CommandLineTools/SDKs/MacOSX11.1.sdk/usr/include/sys/_types/_off_t.h \
   /Library/Developer/CommandLineTools/SDKs/MacOSX11.1.sdk/usr/include/sys/_types/_ssize_t.h \
   /Library/Developer/CommandLineTools/SDKs/MacOSX11.1.sdk/usr/include/secure/_stdio.h \
-  /Library/Developer/CommandLineTools/SDKs/MacOSX11.1.sdk/usr/include/secure/_common.h
+  /Library/Developer/CommandLineTools/SDKs/MacOSX11.1.sdk/usr/include/secure/_common.h \
+  /Users/aajaanan/Desktop/push/src/../include/../include/string_stack.h \
+  /Users/aajaanan/Desktop/push/src/../include/lib.h \
+  /Users/aajaanan/Desktop/push/src/../include/string_stack.h

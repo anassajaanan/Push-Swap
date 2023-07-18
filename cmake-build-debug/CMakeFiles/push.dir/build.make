@@ -321,6 +321,62 @@ CMakeFiles/push.dir/lib/is_numeric.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/push.dir/lib/is_numeric.c.s"
 	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/aajaanan/Desktop/push/lib/is_numeric.c -o CMakeFiles/push.dir/lib/is_numeric.c.s
 
+CMakeFiles/push.dir/lib/ft_strdup.c.o: CMakeFiles/push.dir/flags.make
+CMakeFiles/push.dir/lib/ft_strdup.c.o: /Users/aajaanan/Desktop/push/lib/ft_strdup.c
+CMakeFiles/push.dir/lib/ft_strdup.c.o: CMakeFiles/push.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/aajaanan/Desktop/push/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_19) "Building C object CMakeFiles/push.dir/lib/ft_strdup.c.o"
+	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/push.dir/lib/ft_strdup.c.o -MF CMakeFiles/push.dir/lib/ft_strdup.c.o.d -o CMakeFiles/push.dir/lib/ft_strdup.c.o -c /Users/aajaanan/Desktop/push/lib/ft_strdup.c
+
+CMakeFiles/push.dir/lib/ft_strdup.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/push.dir/lib/ft_strdup.c.i"
+	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Users/aajaanan/Desktop/push/lib/ft_strdup.c > CMakeFiles/push.dir/lib/ft_strdup.c.i
+
+CMakeFiles/push.dir/lib/ft_strdup.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/push.dir/lib/ft_strdup.c.s"
+	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/aajaanan/Desktop/push/lib/ft_strdup.c -o CMakeFiles/push.dir/lib/ft_strdup.c.s
+
+CMakeFiles/push.dir/lib/ft_strlcpy.c.o: CMakeFiles/push.dir/flags.make
+CMakeFiles/push.dir/lib/ft_strlcpy.c.o: /Users/aajaanan/Desktop/push/lib/ft_strlcpy.c
+CMakeFiles/push.dir/lib/ft_strlcpy.c.o: CMakeFiles/push.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/aajaanan/Desktop/push/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_20) "Building C object CMakeFiles/push.dir/lib/ft_strlcpy.c.o"
+	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/push.dir/lib/ft_strlcpy.c.o -MF CMakeFiles/push.dir/lib/ft_strlcpy.c.o.d -o CMakeFiles/push.dir/lib/ft_strlcpy.c.o -c /Users/aajaanan/Desktop/push/lib/ft_strlcpy.c
+
+CMakeFiles/push.dir/lib/ft_strlcpy.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/push.dir/lib/ft_strlcpy.c.i"
+	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Users/aajaanan/Desktop/push/lib/ft_strlcpy.c > CMakeFiles/push.dir/lib/ft_strlcpy.c.i
+
+CMakeFiles/push.dir/lib/ft_strlcpy.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/push.dir/lib/ft_strlcpy.c.s"
+	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/aajaanan/Desktop/push/lib/ft_strlcpy.c -o CMakeFiles/push.dir/lib/ft_strlcpy.c.s
+
+CMakeFiles/push.dir/lib/ft_strlen.c.o: CMakeFiles/push.dir/flags.make
+CMakeFiles/push.dir/lib/ft_strlen.c.o: /Users/aajaanan/Desktop/push/lib/ft_strlen.c
+CMakeFiles/push.dir/lib/ft_strlen.c.o: CMakeFiles/push.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/aajaanan/Desktop/push/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_21) "Building C object CMakeFiles/push.dir/lib/ft_strlen.c.o"
+	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/push.dir/lib/ft_strlen.c.o -MF CMakeFiles/push.dir/lib/ft_strlen.c.o.d -o CMakeFiles/push.dir/lib/ft_strlen.c.o -c /Users/aajaanan/Desktop/push/lib/ft_strlen.c
+
+CMakeFiles/push.dir/lib/ft_strlen.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/push.dir/lib/ft_strlen.c.i"
+	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Users/aajaanan/Desktop/push/lib/ft_strlen.c > CMakeFiles/push.dir/lib/ft_strlen.c.i
+
+CMakeFiles/push.dir/lib/ft_strlen.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/push.dir/lib/ft_strlen.c.s"
+	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/aajaanan/Desktop/push/lib/ft_strlen.c -o CMakeFiles/push.dir/lib/ft_strlen.c.s
+
+CMakeFiles/push.dir/src/string_stack.c.o: CMakeFiles/push.dir/flags.make
+CMakeFiles/push.dir/src/string_stack.c.o: /Users/aajaanan/Desktop/push/src/string_stack.c
+CMakeFiles/push.dir/src/string_stack.c.o: CMakeFiles/push.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/aajaanan/Desktop/push/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_22) "Building C object CMakeFiles/push.dir/src/string_stack.c.o"
+	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/push.dir/src/string_stack.c.o -MF CMakeFiles/push.dir/src/string_stack.c.o.d -o CMakeFiles/push.dir/src/string_stack.c.o -c /Users/aajaanan/Desktop/push/src/string_stack.c
+
+CMakeFiles/push.dir/src/string_stack.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/push.dir/src/string_stack.c.i"
+	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Users/aajaanan/Desktop/push/src/string_stack.c > CMakeFiles/push.dir/src/string_stack.c.i
+
+CMakeFiles/push.dir/src/string_stack.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/push.dir/src/string_stack.c.s"
+	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/aajaanan/Desktop/push/src/string_stack.c -o CMakeFiles/push.dir/src/string_stack.c.s
+
 # Object files for target push
 push_OBJECTS = \
 "CMakeFiles/push.dir/lib/ft_split.c.o" \
@@ -340,7 +396,11 @@ push_OBJECTS = \
 "CMakeFiles/push.dir/src/checker_utils.c.o" \
 "CMakeFiles/push.dir/lib/ft_strcmp.c.o" \
 "CMakeFiles/push.dir/lib/ft_atoi.c.o" \
-"CMakeFiles/push.dir/lib/is_numeric.c.o"
+"CMakeFiles/push.dir/lib/is_numeric.c.o" \
+"CMakeFiles/push.dir/lib/ft_strdup.c.o" \
+"CMakeFiles/push.dir/lib/ft_strlcpy.c.o" \
+"CMakeFiles/push.dir/lib/ft_strlen.c.o" \
+"CMakeFiles/push.dir/src/string_stack.c.o"
 
 # External object files for target push
 push_EXTERNAL_OBJECTS =
@@ -363,9 +423,13 @@ push: CMakeFiles/push.dir/src/checker_utils.c.o
 push: CMakeFiles/push.dir/lib/ft_strcmp.c.o
 push: CMakeFiles/push.dir/lib/ft_atoi.c.o
 push: CMakeFiles/push.dir/lib/is_numeric.c.o
+push: CMakeFiles/push.dir/lib/ft_strdup.c.o
+push: CMakeFiles/push.dir/lib/ft_strlcpy.c.o
+push: CMakeFiles/push.dir/lib/ft_strlen.c.o
+push: CMakeFiles/push.dir/src/string_stack.c.o
 push: CMakeFiles/push.dir/build.make
 push: CMakeFiles/push.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/Users/aajaanan/Desktop/push/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_19) "Linking C executable push"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/Users/aajaanan/Desktop/push/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_23) "Linking C executable push"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/push.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.

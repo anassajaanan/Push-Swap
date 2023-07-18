@@ -87,7 +87,13 @@
 		<Unit filename="/Users/aajaanan/Desktop/push/include/checker.h">
 			<Option target="push"/>
 		</Unit>
+		<Unit filename="/Users/aajaanan/Desktop/push/include/lib.h">
+			<Option target="push"/>
+		</Unit>
 		<Unit filename="/Users/aajaanan/Desktop/push/include/push_swap.h">
+			<Option target="push"/>
+		</Unit>
+		<Unit filename="/Users/aajaanan/Desktop/push/include/string_stack.h">
 			<Option target="push"/>
 		</Unit>
 		<Unit filename="/Users/aajaanan/Desktop/push/lib/ft_atoi.c">
@@ -97,6 +103,15 @@
 			<Option target="push"/>
 		</Unit>
 		<Unit filename="/Users/aajaanan/Desktop/push/lib/ft_strcmp.c">
+			<Option target="push"/>
+		</Unit>
+		<Unit filename="/Users/aajaanan/Desktop/push/lib/ft_strdup.c">
+			<Option target="push"/>
+		</Unit>
+		<Unit filename="/Users/aajaanan/Desktop/push/lib/ft_strlcpy.c">
+			<Option target="push"/>
+		</Unit>
+		<Unit filename="/Users/aajaanan/Desktop/push/lib/ft_strlen.c">
 			<Option target="push"/>
 		</Unit>
 		<Unit filename="/Users/aajaanan/Desktop/push/lib/is_numeric.c">
@@ -136,6 +151,9 @@
 			<Option target="push"/>
 		</Unit>
 		<Unit filename="/Users/aajaanan/Desktop/push/src/stack_operations_b.c">
+			<Option target="push"/>
+		</Unit>
+		<Unit filename="/Users/aajaanan/Desktop/push/src/string_stack.c">
 			<Option target="push"/>
 		</Unit>
 		<Unit filename="/Users/aajaanan/Desktop/push/CMakeLists.txt">

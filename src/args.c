@@ -11,6 +11,8 @@
 /* ************************************************************************** */
 
 #include "../include/push_swap.h"
+#include "../include/lib.h"
+#include "../include/string_stack.h"
 
 int	has_duplicates(t_stack *s)
 {
@@ -40,68 +42,77 @@ int	has_duplicates(t_stack *s)
 	return (0);
 }
 
-void	handle_arguments(int argc, char *argv[], int *size, char ***args)
+t_stack_str *parse_arguments(int argc, char *argv[])
 {
-	int	i;
+	int         i;
+	int         j;
+	t_stack_str *s;
+	char        **args;
 
-	if (argc == 2)
+	i = 1;
+	s = (t_stack_str *)malloc(sizeof(t_stack_str));
+	init_stack_str(s);
+	while (i < argc)
 	{
-		i = 0;
-		*args = ft_split(argv[1], ' ');
-		while ((*args)[i])
-			i++;
-		*size = i;
+		args = ft_split(argv[i], ' ');
+		if (args[0] == NULL)
+			push_str(s, "space");
+		j = 0;
+		while (args[j])
+		{
+			push_str(s, args[j]);
+			j++;
+		}
+		free(args);
+		i++;
 	}
-	else if (argc > 2)
-	{
-		*size = argc - 1;
-		*args = argv + 1;
-	}
+	return (s);
 }
 
-void    create_validated_stack(int size, char **args, t_stack *a, int *is_valid)
+void    create_validated_stack(t_stack *a, t_stack_str *args, int *is_valid)
 {
-	int i;
-	long int    num;
+	struct s_stack_node_str *tmp;
+	long                    num;
 
-	i = size - 1;
-	while (i >= 0)
+	tmp = args->top;
+	while (tmp)
 	{
-		if (is_numeric(args[i]))
+		if (is_numeric(tmp->val))
 		{
-			num = ft_atoi(args[i]);
+			num = ft_atoi(tmp->val);
 			if (num > INT_MAX || num < INT_MIN)
 			{
 				*is_valid = 0;
-				break ;
+				return ;
 			}
-			else
-				push(a, (int)num);
+			push(a, (int)num);
 		}
 		else
 		{
 			*is_valid = 0;
-			break ;
+			return ;
 		}
-		i--;
+		tmp = tmp->next;
 	}
 }
 
-t_stack *get_validated_stack(int size, char **args)
+
+t_stack     *get_validated_stack(int argc, char *argv[])
 {
 	t_stack *a;
-	int is_valid;
+	int     is_valid;
+	t_stack_str *args;
 
 	is_valid = 1;
 	a = (t_stack *)malloc(sizeof(t_stack));
 	init_stack(a);
-	if (size == 0)
-		return (a);
-	create_validated_stack(size, args, a, &is_valid);
+	args = parse_arguments(argc, argv);
+	create_validated_stack(a, args, &is_valid);
 	if (!is_valid || has_duplicates(a))
 	{
 		free_stack(a);
 		return (NULL);
 	}
+	free_stack_str(args);
 	return (a);
 }

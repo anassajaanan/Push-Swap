@@ -12,6 +12,7 @@
 
 #include "../include/checker.h"
 #include "../include/get_next_line.h"
+#include "../include/lib.h"
 
 
 void    process_instructions(t_stack *a, t_stack *b)
