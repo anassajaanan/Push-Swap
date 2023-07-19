@@ -39,27 +39,23 @@ void    process_instructions(t_stack *a, t_stack *b)
 		else
 			printf("KO\n");
 	}
-	free_stack(a);
-	free_stack(b);
 }
-//
-//int main(int argc, char *argv[])
-//{
-//	t_stack	*a;
-//	t_stack	*b;
-//	int		size;
-//	char	**args;
-//
-//	args = NULL;
-//	handle_arguments(argc, argv, &size, &args);
-//	a = get_validated_stack(size, args);
-//	if (a == NULL)
-//		printf("Error\n");
-//	else if (a->length > 0)
-//	{
-//		b = (t_stack *)malloc(sizeof(t_stack));
-//		init_stack(b);
-//		process_instructions(a, b);
-//	}
-//	free_args(args);
-//}
+
+int main(int argc, char *argv[])
+{
+	t_stack	*a;
+	t_stack	*b;
+
+	a = get_validated_stack(argc, argv);
+	if (a == NULL)
+		printf("Error\n");
+	else
+	{
+		b = (t_stack *)malloc(sizeof(t_stack));
+		init_stack(b);
+		process_instructions(a, b);
+		free_stack(a);
+		free_stack(b);
+	}
+	return (0);
+}

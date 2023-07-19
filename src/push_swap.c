@@ -3,6 +3,18 @@
 /*                                                        :::      ::::::::   */
 /*   push_swap.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
+/*   By: aajaanan <aajaanan@student.42abudhabi.ae>  +#+  +:+       +#+        */
+/*                                                +#+#+#+#+#+   +#+           */
+/*   Created: 2023/07/17 14:21:37 by aajaanan          #+#    #+#             */
+/*   Updated: 2023/07/18 20:30:18 by aajaanan         ###   ########.fr       */
+/*                                                                            */
+/* ************************************************************************** */
+
+/* ************************************************************************** */
+/*                                                                            */
+/*                                                        :::      ::::::::   */
+/*   push_swap.c                                        :+:      :+:    :+:   */
+/*                                                    +:+ +:+         +:+     */
 /*   By: aajaanan <aajaanan@student.42abudhabi.a    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/06/12 16:37:40 by aajaanan          #+#    #+#             */
@@ -28,24 +40,22 @@ void	quick_cost_sort(t_stack *a, t_stack *b)
 	}
 }
 
-int	main(int argc, char *argv[])
-{
-	t_stack	*a;
-	t_stack	*b;
-
-	a = get_validated_stack(argc, argv);
-	if (a == NULL)
-	{
-		printf("Error\n");
-		return (0);
-	}
-	else
-	{
-		b = (t_stack *)malloc(sizeof(t_stack));
-		init_stack(b);
-		quick_cost_sort(a, b);
-		free_stack(a);
-		free_stack(b);
-		return (0);
-	}
-}
+//int	main(int argc, char *argv[])
+//{
+//	t_stack	*a;
+//	t_stack	*b;
+//
+//	a = get_validated_stack(argc, argv);
+//	if (a == NULL)
+//		printf("Error\n");
+//	else
+//	{
+//		b = (t_stack *)malloc(sizeof(t_stack));
+//		init_stack(b);
+//		quick_cost_sort(a, b);
+//
+//		free_stack(a);
+//		free_stack(b);
+//	}
+//	return (0);
+//}
