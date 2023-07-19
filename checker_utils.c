@@ -6,13 +6,13 @@
 /*   By: aajaanan <aajaanan@student.42abudhabi.a    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/07/17 17:06:45 by aajaanan          #+#    #+#             */
-/*   Updated: 2023/07/19 11:06:22 by aajaanan         ###   ########.fr       */
+/*   Updated: 2023/07/19 13:30:58 by aajaanan         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "checker.h"
 
-void    execute_instruction(t_stack *a, t_stack *b, char *str)
+void	execute_instruction(t_stack *a, t_stack *b, char *str)
 {
 	if (ft_strcmp(str, "sa\n") == 0)
 		ft_sa(a, 0);
@@ -40,7 +40,7 @@ void    execute_instruction(t_stack *a, t_stack *b, char *str)
 		execute_instruction2(a, b, str);
 }
 
-void    execute_instruction2(t_stack *a, t_stack *b, char *str)
+void	execute_instruction2(t_stack *a, t_stack *b, char *str)
 {
 	if (ft_strcmp(str, "rra\n") == 0)
 		ft_rra(a, 0);
@@ -55,46 +55,46 @@ void    execute_instruction2(t_stack *a, t_stack *b, char *str)
 
 int	get_min(t_stack s)
 {
-    struct s_stack_node	*p;
-    int					min;
+	struct s_stack_node	*p;
+	int					min;
 
-    min = 2147483647;
-    p = s.top;
-    while (p)
-    {
-        if (p->val < min)
-            min = p->val;
-        p = p->next;
-    }
-    return (min);
+	min = 2147483647;
+	p = s.top;
+	while (p)
+	{
+		if (p->val < min)
+			min = p->val;
+		p = p->next;
+	}
+	return (min);
 }
 
-int get_max(t_stack s)
+int	get_max(t_stack s)
 {
-    struct s_stack_node	*p;
-    int					max;
+	struct s_stack_node	*p;
+	int					max;
 
-    max = -2147483648;
-    p = s.top;
-    while (p)
-    {
-        if (p->val > max)
-            max = p->val;
-        p = p->next;
-    }
-    return (max);
+	max = -2147483648;
+	p = s.top;
+	while (p)
+	{
+		if (p->val > max)
+			max = p->val;
+		p = p->next;
+	}
+	return (max);
 }
 
 int	is_stack_sorted(t_stack *s)
 {
-    struct s_stack_node	*p;
+	struct s_stack_node	*p;
 
-    p = s->top;
-    while (p && p->next)
-    {
-        if (p->val > p->next->val)
-            return (0);
-        p = p->next;
-    }
-    return (1);
+	p = s->top;
+	while (p && p->next)
+	{
+		if (p->val > p->next->val)
+			return (0);
+		p = p->next;
+	}
+	return (1);
 }

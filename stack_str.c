@@ -1,12 +1,12 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   string_stack.c                                     :+:      :+:    :+:   */
+/*   stack_str.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: aajaanan <aajaanan@student.42abudhabi.ae>  +#+  +:+       +#+        */
+/*   By: aajaanan <aajaanan@student.42abudhabi.a    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/07/18 15:25:00 by aajaanan          #+#    #+#             */
-/*   Updated: 2023/07/18 15:39:27 by aajaanan         ###   ########.fr       */
+/*   Updated: 2023/07/19 14:15:36 by aajaanan         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -21,7 +21,8 @@ void	push_str(t_stack_str *s, char *val)
 {
 	struct s_stack_node_str	*new_node;
 
-	new_node = (struct s_stack_node_str *)malloc(sizeof(struct s_stack_node_str));
+	new_node = (struct s_stack_node_str *)malloc(sizeof
+			(struct s_stack_node_str));
 	new_node->val = val;
 	new_node->next = NULL;
 	if (s->top == NULL)
@@ -35,10 +36,10 @@ void	push_str(t_stack_str *s, char *val)
 	}
 }
 
-char    *pop_str(t_stack_str *s)
+char	*pop_str(t_stack_str *s)
 {
 	struct s_stack_node_str	*p;
-	char                    *val;
+	char					*val;
 
 	p = s->top;
 	val = p->val;
@@ -47,7 +48,7 @@ char    *pop_str(t_stack_str *s)
 	return (val);
 }
 
-void    free_stack_str(t_stack_str *s)
+void	free_stack_str(t_stack_str *s)
 {
 	struct s_stack_node_str	*p;
 

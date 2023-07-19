@@ -6,7 +6,7 @@
 /*   By: aajaanan <aajaanan@student.42abudhabi.a    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/07/17 12:36:20 by aajaanan          #+#    #+#             */
-/*   Updated: 2023/07/17 15:00:41 by aajaanan         ###   ########.fr       */
+/*   Updated: 2023/07/19 14:19:23 by aajaanan         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -60,7 +60,7 @@ void	move_min_to_top(t_stack *a)
 int	find_best_target_in_stack_a(t_stack *a, int src_value_b)
 {
 	t_stack				*s;
-	int                 target;
+	int					target;
 	struct s_stack_node	*temp;
 
 	s = (t_stack *)malloc(sizeof(t_stack));

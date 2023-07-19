@@ -6,12 +6,12 @@
 /*   By: aajaanan <aajaanan@student.42abudhabi.a    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/07/18 10:34:14 by aajaanan          #+#    #+#             */
-/*   Updated: 2023/07/19 12:03:36 by aajaanan         ###   ########.fr       */
+/*   Updated: 2023/07/19 14:09:45 by aajaanan         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#ifndef PUSH_LIB_H
-#define PUSH_LIB_H
+#ifndef LIB_H
+# define LIB_H
 
 # include <stdlib.h>
 # include <unistd.h>
@@ -33,26 +33,26 @@ typedef struct s_queue
 }						t_queue;
 
 /* ================ QUEUE ================ */
-void	init_queue(t_queue *q);
-void	enqueue(t_queue *q, char c);
-char	dequeue(t_queue *q);
-int		queue_is_empty(t_queue *q);
+void		init_queue(t_queue *q);
+void		enqueue(t_queue *q, char c);
+char		dequeue(t_queue *q);
+int			queue_is_empty(t_queue *q);
 
 /* ================ GET_NEXT_LINE ================ */
-int		contains_newline(t_queue *q);
-char	*get_line(t_queue *q);
-char	*get_last_line(t_queue *q);
-char	*handle_bytes(ssize_t bytes, t_queue *q, char *buffer, int *fd);
-char	*get_next_line(int fd);
+int			contains_newline(t_queue *q);
+char		*get_line(t_queue *q);
+char		*get_last_line(t_queue *q);
+char		*handle_bytes(ssize_t bytes, t_queue *q, char *buffer, int *fd);
+char		*get_next_line(int fd);
 
 /* ================ LIBFT ================ */
-char	    **ft_split(const char *str, char sep);
+char		**ft_split(const char *str, char sep);
 long int	ft_atoi(const char *str);
-int	        is_numeric(const char *str);
-int         ft_strcmp(char *s1, char *s2);
-char	    *ft_strdup(const char *s);
-size_t	    ft_strlcpy(char *dest, const char *src, size_t size);
-size_t	    ft_strlen(const char *str);
+int			is_numeric(const char *str);
+int			ft_strcmp(char *s1, char *s2);
+char		*ft_strdup(const char *s);
+size_t		ft_strlcpy(char *dest, const char *src, size_t size);
+size_t		ft_strlen(const char *str);
 void		ft_putstr_fd(char *s, int fd);
 
-#endif //PUSH_LIB_H
+#endif //LIB_H

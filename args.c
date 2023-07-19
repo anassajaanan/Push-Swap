@@ -6,7 +6,7 @@
 /*   By: aajaanan <aajaanan@student.42abudhabi.a    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/06/12 16:37:12 by aajaanan          #+#    #+#             */
-/*   Updated: 2023/07/17 15:45:16 by aajaanan         ###   ########.fr       */
+/*   Updated: 2023/07/19 13:29:58 by aajaanan         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -40,12 +40,12 @@ int	has_duplicates(t_stack *s)
 	return (0);
 }
 
-t_stack_str *parse_arguments(int argc, char *argv[])
+t_stack_str	*parse_arguments(int argc, char *argv[])
 {
-	int         i;
-	int         j;
-	t_stack_str *s;
-	char        **args;
+	int			i;
+	int			j;
+	t_stack_str	*s;
+	char		**args;
 
 	i = 1;
 	s = (t_stack_str *)malloc(sizeof(t_stack_str));
@@ -67,10 +67,10 @@ t_stack_str *parse_arguments(int argc, char *argv[])
 	return (s);
 }
 
-void    create_validated_stack(t_stack *a, t_stack_str *args, int *is_valid)
+void	create_validated_stack(t_stack *a, t_stack_str *args, int *is_valid)
 {
-	struct s_stack_node_str *tmp;
-	long                    num;
+	struct s_stack_node_str	*tmp;
+	long					num;
 
 	tmp = args->top;
 	while (tmp)
@@ -94,12 +94,11 @@ void    create_validated_stack(t_stack *a, t_stack_str *args, int *is_valid)
 	}
 }
 
-
-t_stack     *get_validated_stack(int argc, char *argv[])
+t_stack	*get_validated_stack(int argc, char *argv[])
 {
-	t_stack *a;
-	int     is_valid;
-	t_stack_str *args;
+	t_stack		*a;
+	t_stack_str	*args;
+	int			is_valid;
 
 	is_valid = 1;
 	a = (t_stack *)malloc(sizeof(t_stack));

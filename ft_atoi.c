@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   ft_atoi.c                                          :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: aajaanan <aajaanan@student.42abudhabi.ae>  +#+  +:+       +#+        */
+/*   By: aajaanan <aajaanan@student.42abudhabi.a    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/07/18 07:24:04 by aajaanan          #+#    #+#             */
-/*   Updated: 2023/07/18 07:24:07 by aajaanan         ###   ########.fr       */
+/*   Updated: 2023/07/19 14:03:42 by aajaanan         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
