@@ -10,7 +10,7 @@
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "../include/stack.h"
+#include "stack.h"
 
 void	init_stack(t_stack *s)
 {

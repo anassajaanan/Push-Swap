@@ -1,36 +1,27 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   small_sort.c                                       :+:      :+:    :+:   */
+/*   ft_putstr_fd.c                                     :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: aajaanan <aajaanan@student.42abudhabi.a    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2023/07/17 14:33:17 by aajaanan          #+#    #+#             */
-/*   Updated: 2023/07/17 15:03:02 by aajaanan         ###   ########.fr       */
+/*   Created: 2023/07/19 09:04:08 by aajaanan          #+#    #+#             */
+/*   Updated: 2023/07/19 12:03:12 by aajaanan         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "../include/push_swap.h"
+#include "lib.h"
 
-void	sort_small(t_stack *a)
+void	ft_putstr_fd(char *s, int fd)
 {
-	int	max;
+	int	i;
 
-	if (a->length <= 1)
+	if (!s)
 		return ;
-	else if (a->length == 2)
+	i = 0;
+	while (s[i])
 	{
-		if (a->top->val > a->top->next->val)
-			ft_sa(a, 1);
-	}
-	else if (a->length == 3)
-	{
-		max = get_max(*a);
-		if (a->top->val == max)
-			ft_ra(a, 1);
-		else if (a->top->next->val == max)
-			ft_rra(a, 1);
-		if (a->top->val > a->top->next->val)
-			ft_sa(a, 1);
+		write(fd, &s[i], 1);
+		i++;
 	}
 }

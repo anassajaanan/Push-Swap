@@ -10,7 +10,7 @@
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "../include/lib.h"
+#include "lib.h"
 
 char	*ft_strdup(const char *s)
 {

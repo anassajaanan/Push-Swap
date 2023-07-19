@@ -10,7 +10,7 @@
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "../include/push_swap.h"
+#include "push_swap.h"
 
 void	quick_cost_sort(t_stack *a, t_stack *b)
 {
@@ -39,7 +39,6 @@ int	main(int argc, char *argv[])
 		b = (t_stack *)malloc(sizeof(t_stack));
 		init_stack(b);
 		quick_cost_sort(a, b);
-
 		free_stack(a);
 		free_stack(b);
 	}

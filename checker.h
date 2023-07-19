@@ -16,21 +16,21 @@
 # include <unistd.h>
 # include <stdlib.h>
 # include <limits.h>
-#include "../include/lib.h"
-# include "../include/stack.h"
+#include "lib.h"
+# include "stack.h"
 
-// args.c
+/* ================ args.c ================ */
 int	        has_duplicates(t_stack *s);
 t_stack_str *parse_arguments(int argc, char *argv[]);
 void        create_validated_stack(t_stack *a, t_stack_str *args, int *is_valid);
 t_stack     *get_validated_stack(int argc, char *argv[]);
 
-//  utils.c
+/* ================ Utils.c ================ */
 int	    get_min(t_stack s);
 int     get_max(t_stack s);
 int	    is_stack_sorted(t_stack *s);
 
-// checker_utils.c
+/* ================ checker_utils.c ================ */
 int     is_valid_instruction(char *str);
 void    execute_instruction(t_stack *a, t_stack *b, char *str);
 void    execute_instruction2(t_stack *a, t_stack *b, char *str);

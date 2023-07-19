@@ -14,7 +14,7 @@
 #define PUSH_STACK_H
 
 # include <stdlib.h>
-#include "../include/lib.h"
+#include "lib.h"
 
 /* ================ Stack ================ */
 struct s_stack_node

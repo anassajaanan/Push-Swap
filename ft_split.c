@@ -1,4 +1,4 @@
-#include "../include/lib.h"
+#include "lib.h"
 
 static int	is_separator(char c, char sep)
 {

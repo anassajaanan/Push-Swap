@@ -32,20 +32,20 @@ typedef struct s_queue
 	struct s_queue_node	*rear;
 }						t_queue;
 
-/* QUEUE */
+/* ================ QUEUE ================ */
 void	init_queue(t_queue *q);
 void	enqueue(t_queue *q, char c);
 char	dequeue(t_queue *q);
 int		queue_is_empty(t_queue *q);
 
-/* GET_NEXT_LINE */
+/* ================ GET_NEXT_LINE ================ */
 int		contains_newline(t_queue *q);
 char	*get_line(t_queue *q);
 char	*get_last_line(t_queue *q);
 char	*handle_bytes(ssize_t bytes, t_queue *q, char *buffer, int *fd);
 char	*get_next_line(int fd);
 
-/* LIBFT */
+/* ================ LIBFT ================ */
 char	    **ft_split(const char *str, char sep);
 long int	ft_atoi(const char *str);
 int	        is_numeric(const char *str);

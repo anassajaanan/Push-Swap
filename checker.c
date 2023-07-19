@@ -10,7 +10,7 @@
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "../include/checker.h"
+#include "checker.h"
 
 int is_valid_instruction(char *str)
 {

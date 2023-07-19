@@ -1,32 +1,36 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_strlcpy.c                                       :+:      :+:    :+:   */
+/*   small_sort.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: aajaanan <aajaanan@student.42abudhabi.a    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2023/07/03 20:13:00 by aajaanan          #+#    #+#             */
-/*   Updated: 2023/07/05 14:45:47 by aajaanan         ###   ########.fr       */
+/*   Created: 2023/07/17 14:33:17 by aajaanan          #+#    #+#             */
+/*   Updated: 2023/07/17 15:03:02 by aajaanan         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "../include/lib.h"
+#include "push_swap.h"
 
-size_t	ft_strlcpy(char *dest, const char *src, size_t size)
+void	sort_small(t_stack *a)
 {
-	size_t	i;	
-	size_t	j;
+	int	max;
 
-	i = 0;
-	j = ft_strlen(src);
-	if (size != 0)
+	if (a->length <= 1)
+		return ;
+	else if (a->length == 2)
 	{
-		while (i < size - 1 && i < j)
-		{
-			dest[i] = ((char *)src)[i];
-			i++;
-		}
-		dest[i] = '\0';
+		if (a->top->val > a->top->next->val)
+			ft_sa(a, 1);
 	}
-	return (j);
+	else if (a->length == 3)
+	{
+		max = get_max(*a);
+		if (a->top->val == max)
+			ft_ra(a, 1);
+		else if (a->top->next->val == max)
+			ft_rra(a, 1);
+		if (a->top->val > a->top->next->val)
+			ft_sa(a, 1);
+	}
 }

@@ -1,18 +1,18 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   stack_operations_b.c                               :+:      :+:    :+:   */
+/*   stack_operations_a.c                               :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: aajaanan <aajaanan@student.42abudhabi.a    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/06/27 14:23:53 by aajaanan          #+#    #+#             */
-/*   Updated: 2023/07/19 12:09:13 by aajaanan         ###   ########.fr       */
+/*   Updated: 2023/07/19 12:08:24 by aajaanan         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "../include/stack.h"
+#include "stack.h"
 
-void	ft_sb(t_stack *s, int print_flag)
+void	ft_sa(t_stack *s, int print_flag)
 {
 	int	temp;
 
@@ -23,49 +23,49 @@ void	ft_sb(t_stack *s, int print_flag)
 		s->top->next->val = temp;
 	}
 	if (print_flag)
-		ft_putstr_fd("sb\n", 1);
+		ft_putstr_fd("sa\n", 1);
 }
 
-void	ft_pb(t_stack *a, t_stack *b, int print_flag)
+void	ft_pa(t_stack *a, t_stack *b, int print_flag)
 {
-	if (a->top)
-		push(b, pop(a));
+	if (b->top)
+		push(a, pop(b));
 	if (print_flag)
-		ft_putstr_fd("pb\n", 1);
+		ft_putstr_fd("pa\n", 1);
 }
 
-void	ft_rb(t_stack *b, int print_flag)
-{
-	struct s_stack_node	*temp;
-
-	if (b->top && b->top->next)
-	{
-		temp = b->top;
-		b->top = b->top->next;
-		b->last->next = temp;
-		temp->prev = b->last;
-		b->last = temp;
-		b->top->prev = NULL;
-		b->last->next = NULL;
-	}
-	if (print_flag)
-		ft_putstr_fd("rb\n", 1);
-}
-
-void	ft_rrb(t_stack *b, int print_flag)
+void	ft_ra(t_stack *a, int print_flag)
 {
 	struct s_stack_node	*temp;
 
-	if (b->top && b->top->next)
+	if (a->top && a->top->next)
 	{
-		temp = b->last;
-		b->last = b->last->prev;
-		b->top->prev = temp;
-		temp->next = b->top;
-		b->top = temp;
-		b->last->next = NULL;
-		b->top->prev = NULL;
+		temp = a->top;
+		a->top = a->top->next;
+		a->last->next = temp;
+		temp->prev = a->last;
+		a->last = temp;
+		a->last->next = NULL;
+		a->top->prev = NULL;
 	}
 	if (print_flag)
-		ft_putstr_fd("rrb\n", 1);
+		ft_putstr_fd("ra\n", 1);
+}
+
+void	ft_rra(t_stack *a, int print_flag)
+{
+	struct s_stack_node	*temp;
+
+	if (a->top && a->top->next)
+	{
+		temp = a->last;
+		a->last = a->last->prev;
+		a->top->prev = temp;
+		temp->next = a->top;
+		a->top = temp;
+		a->last->next = NULL;
+		a->top->prev = NULL;
+	}
+	if (print_flag)
+		ft_putstr_fd("rra\n", 1);
 }

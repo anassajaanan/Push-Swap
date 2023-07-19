@@ -10,7 +10,7 @@
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "../include/checker.h"
+#include "checker.h"
 
 void    execute_instruction(t_stack *a, t_stack *b, char *str)
 {

@@ -1,49 +1,44 @@
-NAME = push_swap
+NAME =			push_swap
 
-BONUS_NAME = checker
+BONUS_NAME =	checker
 
-SRCS = src/args.c src/push_swap.c src/push_swap_utils.c src/stack.c src/stack_operations_a.c \
-		src/stack_operations_b.c src/stack_str.c \
-		sorting_algorithms/cost_sort.c sorting_algorithms/cost_sort_utils.c sorting_algorithms/quick_sort.c \
-		sorting_algorithms/small_sort.c\
-		lib/ft_atoi.c lib/ft_putstr_fd.c lib/ft_split.c lib/ft_strcmp.c lib/ft_strdup.c lib/ft_strlcpy.c \
-		lib/ft_strlen.c lib/get_next_line.c lib/get_next_line_utils.c lib/is_numeric.c
+SRCS =			args.c push_swap.c push_swap_utils.c stack.c stack_operations_a.c stack_operations_b.c stack_str.c \
+				cost_sort.c cost_sort_utils.c quick_sort.c small_sort.c\
+				ft_atoi.c ft_putstr_fd.c ft_split.c ft_strcmp.c ft_strdup.c ft_strlcpy.c ft_strlen.c get_next_line.c get_next_line_utils.c is_numeric.c
 
-BONUS_SRCS = src/args.c src/checker.c src/checker_utils.c src/stack.c \
-			src/stack_operations_a.c src/stack_operations_b.c src/stack_str.c \
-			sorting_algorithms/quick_sort.c \
-			lib/ft_atoi.c lib/ft_putstr_fd.c lib/ft_split.c lib/ft_strcmp.c lib/ft_strdup.c lib/ft_strlcpy.c \
-			lib/ft_strlen.c lib/get_next_line.c lib/get_next_line_utils.c lib/is_numeric.c
+BONUS_SRCS =	args.c checker.c checker_utils.c stack.c stack_operations_a.c stack_operations_b.c stack_str.c \
+				quick_sort.c \
+				ft_atoi.c ft_putstr_fd.c ft_split.c ft_strcmp.c ft_strdup.c ft_strlcpy.c ft_strlen.c get_next_line.c get_next_line_utils.c is_numeric.c
 
-OBJS = $(SRCS:.c=.o)
+OBJS =			$(SRCS:.c=.o)
 
-BONUS_OBJS = $(BONUS_SRCS:.c=.o)
+BONUS_OBJS =	$(BONUS_SRCS:.c=.o)
 
-INCLUDE_DIR = ./include
+INCLUDE_DIR =	./
 
-CC = cc
+CC =			cc
 
-CFLAGS = -Wall -Wextra -Werror
+CFLAGS =		-Wall -Wextra -Werror
 
-RM = rm -fr
+RM =			rm -fr
 
-${NAME}: ${OBJS}
-		${CC} ${CFLAGS} -o $@ $^
+${NAME}:		${OBJS}
+				${CC} ${CFLAGS} -o $@ $^
 
-bonus:	${BONUS_OBJS}
-		${CC} ${CFLAGS} -o ${BONUS_NAME} $^
+bonus:			${BONUS_OBJS}
+				${CC} ${CFLAGS} -o ${BONUS_NAME} $^
 
-%.o:	%.c
-		${CC} ${CFLAGS} -I ${INCLUDE_DIR} -c $< -o $@
+%.o:			%.c
+				${CC} ${CFLAGS} -I ${INCLUDE_DIR} -c $< -o $@
 
-all:	${NAME}
+all:			${NAME}
 
 clean:
-		${RM} ${OBJS} ${BONUS_OBJS}
+				${RM} ${OBJS} ${BONUS_OBJS}
 
-fclean:	clean
-		${RM} ${NAME} ${BONUS_NAME}
+fclean:			clean
+				${RM} ${NAME} ${BONUS_NAME}
 
-re:		fclean all
+re:				fclean all
 
-.PHONY:	all clean fclean re
+.PHONY:			all clean fclean re
