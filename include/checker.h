@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   checker.h                                          :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: aajaanan <aajaanan@student.42abudhabi.ae>  +#+  +:+       +#+        */
+/*   By: aajaanan <aajaanan@student.42abudhabi.a    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/07/17 16:49:12 by aajaanan          #+#    #+#             */
-/*   Updated: 2023/07/17 16:49:17 by aajaanan         ###   ########.fr       */
+/*   Updated: 2023/07/19 11:00:25 by aajaanan         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -26,7 +26,6 @@ void        create_validated_stack(t_stack *a, t_stack_str *args, int *is_valid)
 t_stack     *get_validated_stack(int argc, char *argv[]);
 
 //  utils.c
-void	display_stack(t_stack *a);
 int	    get_min(t_stack s);
 int     get_max(t_stack s);
 int	    is_stack_sorted(t_stack *s);
