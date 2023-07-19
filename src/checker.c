@@ -6,7 +6,7 @@
 /*   By: aajaanan <aajaanan@student.42abudhabi.a    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/07/17 16:31:13 by aajaanan          #+#    #+#             */
-/*   Updated: 2023/07/19 11:06:01 by aajaanan         ###   ########.fr       */
+/*   Updated: 2023/07/19 12:06:29 by aajaanan         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -35,7 +35,7 @@ void    process_instructions(t_stack *a, t_stack *b)
 			execute_instruction(a, b, line);
 		else
 		{
-			ft_putstr("Error\n");
+			ft_putstr_fd("Error\n", 2);
 			free(line);
 			error = 1;
 			break ;
@@ -45,9 +45,9 @@ void    process_instructions(t_stack *a, t_stack *b)
 	if (!error)
 	{
 		if (is_stack_sorted(a) && b->length == 0)
-			ft_putstr("OK\n");
+			ft_putstr_fd("OK\n", 1);
 		else
-			ft_putstr("KO\n");
+			ft_putstr_fd("KO\n", 1);
 	}
 }
 
@@ -58,7 +58,7 @@ int main(int argc, char *argv[])
 
 	a = get_validated_stack(argc, argv);
 	if (a == NULL)
-		ft_putstr("Error\n");
+		ft_putstr("Error\n", 2);
 	else
 	{
 		b = (t_stack *)malloc(sizeof(t_stack));

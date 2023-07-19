@@ -6,7 +6,7 @@
 /*   By: aajaanan <aajaanan@student.42abudhabi.a    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/06/27 14:23:53 by aajaanan          #+#    #+#             */
-/*   Updated: 2023/07/17 16:21:50 by aajaanan         ###   ########.fr       */
+/*   Updated: 2023/07/19 12:09:13 by aajaanan         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -23,7 +23,7 @@ void	ft_sb(t_stack *s, int print_flag)
 		s->top->next->val = temp;
 	}
 	if (print_flag)
-		ft_putstr("sb\n");
+		ft_putstr_fd("sb\n", 1);
 }
 
 void	ft_pb(t_stack *a, t_stack *b, int print_flag)
@@ -31,7 +31,7 @@ void	ft_pb(t_stack *a, t_stack *b, int print_flag)
 	if (a->top)
 		push(b, pop(a));
 	if (print_flag)
-		ft_putstr("pb\n");
+		ft_putstr_fd("pb\n", 1);
 }
 
 void	ft_rb(t_stack *b, int print_flag)
@@ -49,7 +49,7 @@ void	ft_rb(t_stack *b, int print_flag)
 		b->last->next = NULL;
 	}
 	if (print_flag)
-		ft_putstr("rb\n");
+		ft_putstr_fd("rb\n", 1);
 }
 
 void	ft_rrb(t_stack *b, int print_flag)
@@ -67,5 +67,5 @@ void	ft_rrb(t_stack *b, int print_flag)
 		b->top->prev = NULL;
 	}
 	if (print_flag)
-		ft_putstr("rrb\n");
+		ft_putstr_fd("rrb\n", 1);
 }

@@ -6,7 +6,7 @@
 /*   By: aajaanan <aajaanan@student.42abudhabi.a    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/06/12 16:37:40 by aajaanan          #+#    #+#             */
-/*   Updated: 2023/07/17 16:22:38 by aajaanan         ###   ########.fr       */
+/*   Updated: 2023/07/19 12:07:08 by aajaanan         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -33,7 +33,7 @@ int	main(int argc, char *argv[])
 
 	a = get_validated_stack(argc, argv);
 	if (a == NULL)
-		ft_putstr("Error\n");
+		ft_putstr_fd("Error\n", 2);
 	else
 	{
 		b = (t_stack *)malloc(sizeof(t_stack));

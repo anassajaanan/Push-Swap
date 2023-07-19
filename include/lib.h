@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   lib.h                                              :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: aajaanan <aajaanan@student.42abudhabi.ae>  +#+  +:+       +#+        */
+/*   By: aajaanan <aajaanan@student.42abudhabi.a    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/07/18 10:34:14 by aajaanan          #+#    #+#             */
-/*   Updated: 2023/07/18 10:34:17 by aajaanan         ###   ########.fr       */
+/*   Updated: 2023/07/19 12:03:36 by aajaanan         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -53,6 +53,6 @@ int         ft_strcmp(char *s1, char *s2);
 char	    *ft_strdup(const char *s);
 size_t	    ft_strlcpy(char *dest, const char *src, size_t size);
 size_t	    ft_strlen(const char *str);
-void	    ft_putstr(char *s);
+void		ft_putstr_fd(char *s, int fd);
 
 #endif //PUSH_LIB_H
