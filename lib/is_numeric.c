@@ -16,9 +16,13 @@ int	is_numeric(const char *str)
 {
 	if (*str && (*str == '-' || *str == '+'))
 		str++;
-	while (*str && *str >= '0' && *str <= '9')
-		str++;
 	if (*str == '\0')
-		return (1);
-	return (0);
+		return (0);
+	while (*str)
+	{
+		if (*str < '0' || *str > '9')
+			return (0);
+		str++;
+	}
+	return (1);
 }
