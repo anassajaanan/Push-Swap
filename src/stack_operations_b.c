@@ -10,7 +10,7 @@
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "../include/push_swap.h"
+#include "../include/stack.h"
 
 void	ft_sb(t_stack *s, int print_flag)
 {
@@ -23,7 +23,7 @@ void	ft_sb(t_stack *s, int print_flag)
 		s->top->next->val = temp;
 	}
 	if (print_flag)
-		printf("sb\n");
+		ft_putstr("sb\n");
 }
 
 void	ft_pb(t_stack *a, t_stack *b, int print_flag)
@@ -31,7 +31,7 @@ void	ft_pb(t_stack *a, t_stack *b, int print_flag)
 	if (a->top)
 		push(b, pop(a));
 	if (print_flag)
-		printf("pb\n");
+		ft_putstr("pb\n");
 }
 
 void	ft_rb(t_stack *b, int print_flag)
@@ -49,7 +49,7 @@ void	ft_rb(t_stack *b, int print_flag)
 		b->last->next = NULL;
 	}
 	if (print_flag)
-		printf("rb\n");
+		ft_putstr("rb\n");
 }
 
 void	ft_rrb(t_stack *b, int print_flag)
@@ -67,5 +67,5 @@ void	ft_rrb(t_stack *b, int print_flag)
 		b->top->prev = NULL;
 	}
 	if (print_flag)
-		printf("rrb\n");
+		ft_putstr("rrb\n");
 }

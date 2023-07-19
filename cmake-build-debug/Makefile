@@ -129,54 +129,6 @@ push/fast:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/push.dir/build.make CMakeFiles/push.dir/build
 .PHONY : push/fast
 
-get_next_line/get_next_line.o: get_next_line/get_next_line.c.o
-.PHONY : get_next_line/get_next_line.o
-
-# target to build an object file
-get_next_line/get_next_line.c.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/push.dir/build.make CMakeFiles/push.dir/get_next_line/get_next_line.c.o
-.PHONY : get_next_line/get_next_line.c.o
-
-get_next_line/get_next_line.i: get_next_line/get_next_line.c.i
-.PHONY : get_next_line/get_next_line.i
-
-# target to preprocess a source file
-get_next_line/get_next_line.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/push.dir/build.make CMakeFiles/push.dir/get_next_line/get_next_line.c.i
-.PHONY : get_next_line/get_next_line.c.i
-
-get_next_line/get_next_line.s: get_next_line/get_next_line.c.s
-.PHONY : get_next_line/get_next_line.s
-
-# target to generate assembly for a file
-get_next_line/get_next_line.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/push.dir/build.make CMakeFiles/push.dir/get_next_line/get_next_line.c.s
-.PHONY : get_next_line/get_next_line.c.s
-
-get_next_line/get_next_line_utils.o: get_next_line/get_next_line_utils.c.o
-.PHONY : get_next_line/get_next_line_utils.o
-
-# target to build an object file
-get_next_line/get_next_line_utils.c.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/push.dir/build.make CMakeFiles/push.dir/get_next_line/get_next_line_utils.c.o
-.PHONY : get_next_line/get_next_line_utils.c.o
-
-get_next_line/get_next_line_utils.i: get_next_line/get_next_line_utils.c.i
-.PHONY : get_next_line/get_next_line_utils.i
-
-# target to preprocess a source file
-get_next_line/get_next_line_utils.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/push.dir/build.make CMakeFiles/push.dir/get_next_line/get_next_line_utils.c.i
-.PHONY : get_next_line/get_next_line_utils.c.i
-
-get_next_line/get_next_line_utils.s: get_next_line/get_next_line_utils.c.s
-.PHONY : get_next_line/get_next_line_utils.s
-
-# target to generate assembly for a file
-get_next_line/get_next_line_utils.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/push.dir/build.make CMakeFiles/push.dir/get_next_line/get_next_line_utils.c.s
-.PHONY : get_next_line/get_next_line_utils.c.s
-
 lib/ft_atoi.o: lib/ft_atoi.c.o
 .PHONY : lib/ft_atoi.o
 
@@ -200,6 +152,30 @@ lib/ft_atoi.s: lib/ft_atoi.c.s
 lib/ft_atoi.c.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/push.dir/build.make CMakeFiles/push.dir/lib/ft_atoi.c.s
 .PHONY : lib/ft_atoi.c.s
+
+lib/ft_putstr.o: lib/ft_putstr.c.o
+.PHONY : lib/ft_putstr.o
+
+# target to build an object file
+lib/ft_putstr.c.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/push.dir/build.make CMakeFiles/push.dir/lib/ft_putstr.c.o
+.PHONY : lib/ft_putstr.c.o
+
+lib/ft_putstr.i: lib/ft_putstr.c.i
+.PHONY : lib/ft_putstr.i
+
+# target to preprocess a source file
+lib/ft_putstr.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/push.dir/build.make CMakeFiles/push.dir/lib/ft_putstr.c.i
+.PHONY : lib/ft_putstr.c.i
+
+lib/ft_putstr.s: lib/ft_putstr.c.s
+.PHONY : lib/ft_putstr.s
+
+# target to generate assembly for a file
+lib/ft_putstr.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/push.dir/build.make CMakeFiles/push.dir/lib/ft_putstr.c.s
+.PHONY : lib/ft_putstr.c.s
 
 lib/ft_split.o: lib/ft_split.c.o
 .PHONY : lib/ft_split.o
@@ -320,6 +296,54 @@ lib/ft_strlen.s: lib/ft_strlen.c.s
 lib/ft_strlen.c.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/push.dir/build.make CMakeFiles/push.dir/lib/ft_strlen.c.s
 .PHONY : lib/ft_strlen.c.s
+
+lib/get_next_line.o: lib/get_next_line.c.o
+.PHONY : lib/get_next_line.o
+
+# target to build an object file
+lib/get_next_line.c.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/push.dir/build.make CMakeFiles/push.dir/lib/get_next_line.c.o
+.PHONY : lib/get_next_line.c.o
+
+lib/get_next_line.i: lib/get_next_line.c.i
+.PHONY : lib/get_next_line.i
+
+# target to preprocess a source file
+lib/get_next_line.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/push.dir/build.make CMakeFiles/push.dir/lib/get_next_line.c.i
+.PHONY : lib/get_next_line.c.i
+
+lib/get_next_line.s: lib/get_next_line.c.s
+.PHONY : lib/get_next_line.s
+
+# target to generate assembly for a file
+lib/get_next_line.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/push.dir/build.make CMakeFiles/push.dir/lib/get_next_line.c.s
+.PHONY : lib/get_next_line.c.s
+
+lib/get_next_line_utils.o: lib/get_next_line_utils.c.o
+.PHONY : lib/get_next_line_utils.o
+
+# target to build an object file
+lib/get_next_line_utils.c.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/push.dir/build.make CMakeFiles/push.dir/lib/get_next_line_utils.c.o
+.PHONY : lib/get_next_line_utils.c.o
+
+lib/get_next_line_utils.i: lib/get_next_line_utils.c.i
+.PHONY : lib/get_next_line_utils.i
+
+# target to preprocess a source file
+lib/get_next_line_utils.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/push.dir/build.make CMakeFiles/push.dir/lib/get_next_line_utils.c.i
+.PHONY : lib/get_next_line_utils.c.i
+
+lib/get_next_line_utils.s: lib/get_next_line_utils.c.s
+.PHONY : lib/get_next_line_utils.s
+
+# target to generate assembly for a file
+lib/get_next_line_utils.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/push.dir/build.make CMakeFiles/push.dir/lib/get_next_line_utils.c.s
+.PHONY : lib/get_next_line_utils.c.s
 
 lib/is_numeric.o: lib/is_numeric.c.o
 .PHONY : lib/is_numeric.o
@@ -633,29 +657,29 @@ src/stack_operations_b.c.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/push.dir/build.make CMakeFiles/push.dir/src/stack_operations_b.c.s
 .PHONY : src/stack_operations_b.c.s
 
-src/string_stack.o: src/string_stack.c.o
-.PHONY : src/string_stack.o
+src/stack_str.o: src/stack_str.c.o
+.PHONY : src/stack_str.o
 
 # target to build an object file
-src/string_stack.c.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/push.dir/build.make CMakeFiles/push.dir/src/string_stack.c.o
-.PHONY : src/string_stack.c.o
+src/stack_str.c.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/push.dir/build.make CMakeFiles/push.dir/src/stack_str.c.o
+.PHONY : src/stack_str.c.o
 
-src/string_stack.i: src/string_stack.c.i
-.PHONY : src/string_stack.i
+src/stack_str.i: src/stack_str.c.i
+.PHONY : src/stack_str.i
 
 # target to preprocess a source file
-src/string_stack.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/push.dir/build.make CMakeFiles/push.dir/src/string_stack.c.i
-.PHONY : src/string_stack.c.i
+src/stack_str.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/push.dir/build.make CMakeFiles/push.dir/src/stack_str.c.i
+.PHONY : src/stack_str.c.i
 
-src/string_stack.s: src/string_stack.c.s
-.PHONY : src/string_stack.s
+src/stack_str.s: src/stack_str.c.s
+.PHONY : src/stack_str.s
 
 # target to generate assembly for a file
-src/string_stack.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/push.dir/build.make CMakeFiles/push.dir/src/string_stack.c.s
-.PHONY : src/string_stack.c.s
+src/stack_str.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/push.dir/build.make CMakeFiles/push.dir/src/stack_str.c.s
+.PHONY : src/stack_str.c.s
 
 # Help Target
 help:
@@ -666,15 +690,12 @@ help:
 	@echo "... edit_cache"
 	@echo "... rebuild_cache"
 	@echo "... push"
-	@echo "... get_next_line/get_next_line.o"
-	@echo "... get_next_line/get_next_line.i"
-	@echo "... get_next_line/get_next_line.s"
-	@echo "... get_next_line/get_next_line_utils.o"
-	@echo "... get_next_line/get_next_line_utils.i"
-	@echo "... get_next_line/get_next_line_utils.s"
 	@echo "... lib/ft_atoi.o"
 	@echo "... lib/ft_atoi.i"
 	@echo "... lib/ft_atoi.s"
+	@echo "... lib/ft_putstr.o"
+	@echo "... lib/ft_putstr.i"
+	@echo "... lib/ft_putstr.s"
 	@echo "... lib/ft_split.o"
 	@echo "... lib/ft_split.i"
 	@echo "... lib/ft_split.s"
@@ -690,6 +711,12 @@ help:
 	@echo "... lib/ft_strlen.o"
 	@echo "... lib/ft_strlen.i"
 	@echo "... lib/ft_strlen.s"
+	@echo "... lib/get_next_line.o"
+	@echo "... lib/get_next_line.i"
+	@echo "... lib/get_next_line.s"
+	@echo "... lib/get_next_line_utils.o"
+	@echo "... lib/get_next_line_utils.i"
+	@echo "... lib/get_next_line_utils.s"
 	@echo "... lib/is_numeric.o"
 	@echo "... lib/is_numeric.i"
 	@echo "... lib/is_numeric.s"
@@ -729,9 +756,9 @@ help:
 	@echo "... src/stack_operations_b.o"
 	@echo "... src/stack_operations_b.i"
 	@echo "... src/stack_operations_b.s"
-	@echo "... src/string_stack.o"
-	@echo "... src/string_stack.i"
-	@echo "... src/string_stack.s"
+	@echo "... src/stack_str.o"
+	@echo "... src/stack_str.i"
+	@echo "... src/stack_str.s"
 .PHONY : help
 
 

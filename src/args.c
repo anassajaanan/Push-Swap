@@ -11,8 +11,6 @@
 /* ************************************************************************** */
 
 #include "../include/push_swap.h"
-#include "../include/lib.h"
-#include "../include/string_stack.h"
 
 int	has_duplicates(t_stack *s)
 {

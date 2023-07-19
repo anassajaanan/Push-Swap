@@ -10,8 +10,7 @@
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "../include/get_next_line.h"
-#include <stdlib.h>
+#include "../include/lib.h"
 
 int	contains_newline(t_queue *q)
 {

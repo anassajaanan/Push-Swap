@@ -25,24 +25,11 @@
 #ifndef PUSH_SWAP_H
 # define PUSH_SWAP_H
 
+# include <unistd.h>
 # include <stdlib.h>
 # include <limits.h>
-# include <stdio.h>
-#include "../include/string_stack.h"
-
-struct s_stack_node
-{
-    struct s_stack_node	*prev;
-    int					val;
-    struct s_stack_node	*next;
-};
-
-typedef struct s_stack
-{
-    struct s_stack_node	*top;
-    struct s_stack_node	*last;
-    int					length;
-}						t_stack;
+#include "../include/lib.h"
+# include "../include/stack.h"
 
 struct s_min_cost
 {
@@ -50,31 +37,8 @@ struct s_min_cost
 	int target_cost;
 };
 
-// stack.c
-void	init_stack(t_stack *s);
-int	    stack_is_empty(t_stack *s);
-void	push(t_stack *s, int val);
-int	    pop(t_stack *s);
-void    free_stack(t_stack *s);
-
-
-// stack_operations_a.c
-void	ft_sa(t_stack *s, int print_flag);
-void	ft_pa(t_stack *a, t_stack *b, int print_flag);
-void	ft_ra(t_stack *a, int print_flag);
-void	ft_rra(t_stack *a, int print_flag);
-
-// stack_operations_b.c
-void	ft_sb(t_stack *s, int print_flag);
-void	ft_pb(t_stack *a, t_stack *b, int print_flag);
-void	ft_rb(t_stack *b, int print_flag);
-void	ft_rrb(t_stack *b, int print_flag);
-
 // args.c
 int	        has_duplicates(t_stack *s);
-//void        handle_arguments(int argc, char *argv[], int *size, char ***args);
-//void        create_validated_stack(int size, char **args, t_stack *a, int *is_valid);
-//t_stack     *get_validated_stack(int size, char **args);
 t_stack_str *parse_arguments(int argc, char *argv[]);
 void    create_validated_stack(t_stack *a, t_stack_str *args, int *is_valid);
 t_stack     *get_validated_stack(int argc, char *argv[]);
@@ -85,7 +49,6 @@ void	display_stack(t_stack *a);
 int	    get_min(t_stack s);
 int     get_max(t_stack s);
 int	    is_stack_sorted(t_stack *s);
-void	free_args(char **args);
 
 
 // Small Sort

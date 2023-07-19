@@ -78,12 +78,6 @@
 				</MakeCommands>
 			</Target>
 		</Build>
-		<Unit filename="/Users/aajaanan/Desktop/push/get_next_line/get_next_line.c">
-			<Option target="push"/>
-		</Unit>
-		<Unit filename="/Users/aajaanan/Desktop/push/get_next_line/get_next_line_utils.c">
-			<Option target="push"/>
-		</Unit>
 		<Unit filename="/Users/aajaanan/Desktop/push/include/checker.h">
 			<Option target="push"/>
 		</Unit>
@@ -93,10 +87,13 @@
 		<Unit filename="/Users/aajaanan/Desktop/push/include/push_swap.h">
 			<Option target="push"/>
 		</Unit>
-		<Unit filename="/Users/aajaanan/Desktop/push/include/string_stack.h">
+		<Unit filename="/Users/aajaanan/Desktop/push/include/stack.h">
 			<Option target="push"/>
 		</Unit>
 		<Unit filename="/Users/aajaanan/Desktop/push/lib/ft_atoi.c">
+			<Option target="push"/>
+		</Unit>
+		<Unit filename="/Users/aajaanan/Desktop/push/lib/ft_putstr.c">
 			<Option target="push"/>
 		</Unit>
 		<Unit filename="/Users/aajaanan/Desktop/push/lib/ft_split.c">
@@ -112,6 +109,12 @@
 			<Option target="push"/>
 		</Unit>
 		<Unit filename="/Users/aajaanan/Desktop/push/lib/ft_strlen.c">
+			<Option target="push"/>
+		</Unit>
+		<Unit filename="/Users/aajaanan/Desktop/push/lib/get_next_line.c">
+			<Option target="push"/>
+		</Unit>
+		<Unit filename="/Users/aajaanan/Desktop/push/lib/get_next_line_utils.c">
 			<Option target="push"/>
 		</Unit>
 		<Unit filename="/Users/aajaanan/Desktop/push/lib/is_numeric.c">
@@ -153,7 +156,7 @@
 		<Unit filename="/Users/aajaanan/Desktop/push/src/stack_operations_b.c">
 			<Option target="push"/>
 		</Unit>
-		<Unit filename="/Users/aajaanan/Desktop/push/src/string_stack.c">
+		<Unit filename="/Users/aajaanan/Desktop/push/src/stack_str.c">
 			<Option target="push"/>
 		</Unit>
 		<Unit filename="/Users/aajaanan/Desktop/push/CMakeLists.txt">

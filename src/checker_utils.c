@@ -11,9 +11,6 @@
 /* ************************************************************************** */
 
 #include "../include/checker.h"
-#include "../include/get_next_line.h"
-//#include "../include/push_swap.h"
-#include "../include/lib.h"
 
 int is_valid_instruction(char *str)
 {

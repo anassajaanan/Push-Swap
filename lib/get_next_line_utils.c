@@ -10,7 +10,7 @@
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "../include/get_next_line.h"
+#include "../include/lib.h"
 
 void	init_queue(t_queue *q)
 {

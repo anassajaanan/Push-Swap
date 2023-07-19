@@ -59,34 +59,19 @@ int	is_stack_sorted(t_stack *s)
 }
 
 
-void	display_stack(t_stack *a)
-{
-    struct s_stack_node *tmp;
-
-    if (a == NULL)
-        return;
-    printf("===== Stack: =======\n");
-    tmp = a->top;
-    while (tmp != NULL)
-    {
-        printf("%d\n", tmp->val);
-        tmp = tmp->next;
-    }
-    printf("====================\n");
-}
-
-
-void	free_args(char **args)
-{
-	int	i;
-
-	if (args == NULL)
-		return ;
-	i = 0;
-	while (args[i])
-	{
-		free(args[i]);
-		i++;
-	}
-	free(args);
-}
+//void	display_stack(t_stack *a)
+//{
+//    struct s_stack_node *tmp;
+//
+//    if (a == NULL)
+//        return;
+//    ft_putstr("===== Stack: =======\n");
+//    tmp = a->top;
+//    while (tmp != NULL)
+//    {
+//        printf("%d\n", tmp->val);
+//	    ft_putstr();
+//        tmp = tmp->next;
+//    }
+//    ft_putstr("====================\n");
+//}

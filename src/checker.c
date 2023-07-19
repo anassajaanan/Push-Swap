@@ -11,9 +11,6 @@
 /* ************************************************************************** */
 
 #include "../include/checker.h"
-#include "../include/get_next_line.h"
-#include "../include/lib.h"
-
 
 void    process_instructions(t_stack *a, t_stack *b)
 {
@@ -27,7 +24,7 @@ void    process_instructions(t_stack *a, t_stack *b)
 			execute_instruction(a, b, line);
 		else
 		{
-			printf("Error\n");
+			ft_putstr("Error\n");
 			free(line);
 			error = 1;
 			break ;
@@ -37,27 +34,27 @@ void    process_instructions(t_stack *a, t_stack *b)
 	if (!error)
 	{
 		if (is_stack_sorted(a) && b->length == 0)
-			printf("OK\n");
+			ft_putstr("OK\n");
 		else
-			printf("KO\n");
+			ft_putstr("KO\n");
 	}
 }
 
-int main(int argc, char *argv[])
-{
-	t_stack	*a;
-	t_stack	*b;
-
-	a = get_validated_stack(argc, argv);
-	if (a == NULL)
-		printf("Error\n");
-	else
-	{
-		b = (t_stack *)malloc(sizeof(t_stack));
-		init_stack(b);
-		process_instructions(a, b);
-		free_stack(a);
-		free_stack(b);
-	}
-	return (0);
-}
+//int main(int argc, char *argv[])
+//{
+//	t_stack	*a;
+//	t_stack	*b;
+//
+//	a = get_validated_stack(argc, argv);
+//	if (a == NULL)
+//		ft_putstr("Error\n");
+//	else
+//	{
+//		b = (t_stack *)malloc(sizeof(t_stack));
+//		init_stack(b);
+//		process_instructions(a, b);
+//		free_stack(a);
+//		free_stack(b);
+//	}
+//	return (0);
+//}

@@ -3,18 +3,6 @@
 /*                                                        :::      ::::::::   */
 /*   stack_operations_a.c                               :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: aajaanan <aajaanan@student.42abudhabi.ae>  +#+  +:+       +#+        */
-/*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2023/06/27 14:23:53 by aajaanan          #+#    #+#             */
-/*   Updated: 2023/07/17 19:06:55 by aajaanan         ###   ########.fr       */
-/*                                                                            */
-/* ************************************************************************** */
-
-/* ************************************************************************** */
-/*                                                                            */
-/*                                                        :::      ::::::::   */
-/*   stack_operations_a.c                               :+:      :+:    :+:   */
-/*                                                    +:+ +:+         +:+     */
 /*   By: aajaanan <aajaanan@student.42abudhabi.a    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/06/27 14:23:53 by aajaanan          #+#    #+#             */
@@ -22,7 +10,7 @@
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "../include/push_swap.h"
+#include "../include/stack.h"
 
 void	ft_sa(t_stack *s, int print_flag)
 {
@@ -35,7 +23,7 @@ void	ft_sa(t_stack *s, int print_flag)
 		s->top->next->val = temp;
 	}
 	if (print_flag)
-		printf("sa\n");
+		ft_putstr("sa\n");
 }
 
 void	ft_pa(t_stack *a, t_stack *b, int print_flag)
@@ -43,7 +31,7 @@ void	ft_pa(t_stack *a, t_stack *b, int print_flag)
 	if (b->top)
 		push(a, pop(b));
 	if (print_flag)
-		printf("pa\n");
+		ft_putstr("pa\n");
 }
 
 void	ft_ra(t_stack *a, int print_flag)
@@ -61,7 +49,7 @@ void	ft_ra(t_stack *a, int print_flag)
 		a->top->prev = NULL;
 	}
 	if (print_flag)
-		printf("ra\n");
+		ft_putstr("ra\n");
 }
 
 void	ft_rra(t_stack *a, int print_flag)
@@ -79,5 +67,5 @@ void	ft_rra(t_stack *a, int print_flag)
 		a->top->prev = NULL;
 	}
 	if (print_flag)
-		printf("rra\n");
+		ft_putstr("rra\n");
 }
