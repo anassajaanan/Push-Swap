@@ -6,7 +6,7 @@
 /*   By: aajaanan <aajaanan@student.42abudhabi.ae>  +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/07/17 16:31:13 by aajaanan          #+#    #+#             */
-/*   Updated: 2023/07/17 20:07:40 by aajaanan         ###   ########.fr       */
+/*   Updated: 2023/07/19 07:07:03 by aajaanan         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -28,9 +28,11 @@ void    process_instructions(t_stack *a, t_stack *b)
 		else
 		{
 			printf("Error\n");
+			free(line);
 			error = 1;
 			break ;
 		}
+		free(line);
 	}
 	if (!error)
 	{
